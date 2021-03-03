@@ -1,0 +1,311 @@
+{% extends 'layout/base.njk' %}
+{% block content %}
+    <div class="container">
+        <div class="sub cart">
+            <div class="wrap">
+                <div class="breadcrumb">
+                    <span class="">Home</span>
+                    <span class="">마이페이지</span>
+                    <span class="active">한의사 관리</span>
+                </div>
+                <div>
+                    <div class="section__title text-center">
+                        <h2>한의사 관리</h2>
+                        <div class="desc">
+                            <p>
+                                도움말도움말도움말도움말도움말도움말도움말도움말도움말<br/>
+                                도움말도움말도움말도움말도움말도움말<br/>
+                                도움말도움말도움말도움말
+                            </p>
+                        </div>
+                    </div>
+                    <div class="serach-area form-area">
+                        <button class="button small mint">한의사 등록</button>
+                        <button class="button small">전체 삭제</button>
+                        <button class="button small border">선택 삭제</button>
+                    </div>
+
+                    <div>
+                        <div class="board-table-info">
+                            <span>
+                                총 <i>10</i>개의 한의사 내역이 검색 되었습니다.
+                            </span>
+                            <div class="select">
+                                <select name="" id="">
+                                    <option value="">10개씩 보기</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="table board-table">
+                            <table>
+                                <colgroup>
+                                    <col width="60">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col width="290">
+                                    <col>
+                                    <col width="75">
+                                    <col width="75">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <label for="c0" class="checkbox justify-center">
+                                                <input type="checkbox" id="c0" hidden="">
+                                                <span></span>
+                                            </label>
+                                        </th>
+                                        <th>이름</th>
+                                        <th>면허번호</th>
+                                        <th>이메일</th>
+                                        <th>휴대폰번호</th>
+                                        <th>주소</th>
+                                        <th>소속일자</th>
+                                        <th>수정</th>
+                                        <th>삭제</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label for="c1" class="checkbox justify-center">
+                                                <input type="checkbox" id="c1" hidden="">
+                                                <span></span>
+                                            </label>
+                                        </td>
+                                        <td class="">홍길동</td>
+                                        <td>123456</td>
+                                        <td>flywork@flywork.co.kr</td>
+                                        <td>010-1234-5678</td>
+                                        <td>경기도 고양시 일산동구 장항동 849…</td>
+                                        <td>YYYY.MM.DD</td>
+                                        <td class="text-center">
+                                            <a href="" class="btn">수정</a>
+                                        </td>
+                                        <td>
+                                            <a href="" class=""><img src="./assets/images/ico_del.png" alt="" class="m-auto"></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="pagination mt-8">
+                        <a href="" class="arrow arrow-prev">이전</a>
+                        <a href="" class="active">1</a>
+                        <a href="" class="">2</a>
+                        <a href="" class="">3</a>
+                        <a href="" class="">4</a>
+                        <a href="" class="">5</a>
+                        <a href="" class="arrow arrow-next">다음</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# modal 한의사 찾기 #}
+        <div class="modal">
+            <div class="modal__content type2">
+                <header class="modal__header">
+                    <h2 class="modal__title">메세지</h2>
+                    <button class="modal__close">닫기</button>
+                </header>
+                <div class="modal__body">
+                    <div class="subTit type2">
+                        <h3>
+                            한의사님의 기본 정보를 입력 하시면<br/>
+                            입력 정보에 해당하는 한의사님을 찾아 드립니다.
+                        </h3>
+                    </div>
+                    <div class="cont">
+                        <div class="form" style="max-width:410px;margin:0 auto;">
+                            <form action="">
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <div class="input">
+                                            <input type="text" placeholder="이름">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <div class="input">
+                                            <input type="text" placeholder="이메일">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <div class="input">
+                                            <input type="text" placeholder="면허번호">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="action-box flex">
+                                    <a href="" class="button small mint" style="width:100%;">등록</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="result">
+                            <div class="inner" style="max-width:410px;margin:0 auto;">
+                                <div class="tit">결과</div>
+                                <div class="txt">
+                                    <div class="item">
+                                        이름 : 홍길동<br/>
+                                        면허번호 : 12345678<br/>
+                                        이메일 : flywork@flywork.co.kr
+                                    </div>
+                                    {# data None #}
+                                    {# <div class="item dataNone">
+                                        정보 입력 후 “찾기” 버튼을 눌러주세요.
+                                    </div> #}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-box flex justify-center">
+                            <a href="" class="button small mint">신청</a>
+                            <a href="" class="button small">취소</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# modal 한의사 신청 완료 #}
+        <div class="modal">
+            <div class="modal__content type2">
+                <header class="modal__header">
+                    <h2 class="modal__title">메세지</h2>
+                    <button class="modal__close">닫기</button>
+                </header>
+                <div class="modal__body">
+                    <div class="subTit type2">
+                        <h3>
+                            소속 한의사 신청 완료
+                        </h3>
+                    </div>
+                    <div class="cont">
+                        <div class="txt">
+                            <p class="text-center mb-8">
+                                소속 한의사 신청이 정상적으로 완료 되었으며<br/>
+                                관리자의 심사를 거쳐 평일 기준으로 48 시간 이내 결과를 알려드립니다.<br/><br/>
+                                <span>*심사 시, 경우에 따라 관리자의 유선상 연락이 갈 수도 있습니다.</span>
+                            </p>
+                        </div>
+                        <div class="action-box flex justify-center">
+                            <a href="" class="button small mint">확인</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# modal 한의사 정보 #}
+        <div class="modal">
+            <div class="modal__content type2">
+                <header class="modal__header">
+                    <h2 class="modal__title">홍길동 한의사 정보</h2>
+                    <button class="modal__close">닫기</button>
+                </header>
+                <div class="modal__body">
+                    <div class="subTit type2">
+                        <h3>
+                            홍길동 한의사 님의 개인정보입니다.<br/>
+                            개인정보보호에 동참해주세요.
+                        </h3>
+                    </div>
+                    <div class="cont">
+                        <div class="doctorInfo">
+                            <div class="thumb">
+                                <div class="img">
+                                    <img src="http://via.placeholder.com/190x200" alt="">
+                                </div>
+                                <a href="" class="register">
+                                    <img src="./assets/images/ico_writing.png" alt="">
+                                </a>
+                            </div>
+                            <div class="infolist">
+                                <div class="form">
+                                    <form action="">
+                                        <div class="row flex">
+                                            <div class="col">
+                                                <div class="input flex jsutify-between items-center disabled">
+                                                    <span class="flex-none">이름</span>
+                                                    <input type="text" placeholder="홍길동" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input flex jsutify-between items-center disabled">
+                                                    <span class="flex-none">소속일자</span>
+                                                    <input type="text" placeholder="YYYY.MM.DD" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row flex">
+                                            <div class="col">
+                                                <div class="input flex jsutify-between items-center disabled">
+                                                    <span class="flex-none">아이디</span>
+                                                    <input type="text" placeholder="flywork" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input flex jsutify-between items-center">
+                                                    <span class="flex-none">면허번호</span>
+                                                    <input type="text" placeholder="12345678">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row flex">
+                                            <div class="col">
+                                                <div class="input flex jsutify-between items-center">
+                                                    <span class="flex-none">이메일</span>
+                                                    <input type="text" placeholder="flywork@flywork.co.kr">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input flex jsutify-between items-center">
+                                                    <span class="flex-none">휴대폰번호</span>
+                                                    <input type="text" placeholder="01012345678">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row flex">
+                                            <div class="col">
+                                                <div class="input flex jsutify-between items-center">
+                                                    <span class="flex-none">생년월일</span>
+                                                    <input type="text" placeholder="YYYY.MM.DD">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input flex jsutify-between items-center">
+                                                    <span class="flex-none">성별</span>
+                                                    <div class="select ml-auto">
+                                                        <select name="" id="">
+                                                            <option value="">남성</option>
+                                                            <option value="">여성</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="action-box flex justify-center mt-12">
+                            <a href="" class="button small mint">등록</a>
+                            <a href="" class="button small">취소</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,354 @@
+{% extends 'layout/base.njk' %}
+{% block content %}
+    <div class="container">
+        <div class="sub cart order">
+            <div class="wrap">
+                <div class="breadcrumb">
+                    <span class="">Home</span>
+                    <span class="">안심탕제실</span>
+                    <span class="active">처방전</span>
+                </div>
+
+                <div class="order__content">
+                    <div class="row flex">
+                        <div class="col mr-8 flex-1">
+                            <div class="table">
+                                <header class="table__header flex items-center">
+                                    <h3>처방전</h3>
+                                    <a href="" class="button small ml-auto" style="width:auto;padding:0 1.5em;font-size:14px;border-radius:1.5em;line-height:30px;height:30px;">초기화</a>
+                                </header>
+                                <table>
+                                    <colgroup>
+                                        <col width="125">
+                                        <col>
+                                        <col width="125">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>처방명</th>
+                                            <td colspan="3">
+                                                <div class="input">
+                                                    <input type="text" placeholder="방제집 사용 시 자동 입력됩니다." disabled>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>빠른 약재검색</th>
+                                            <td colspan="3">
+                                                <div class="input-box flex">
+                                                    <div class="input">
+                                                        <input type="text" placeholder="" disabled>
+                                                    </div>
+                                                    <div class="action-box flex" style="margin-left:10px;">
+                                                        <a href="" class="button small border" style="width:100px;">개인 방제</a>
+                                                        <a href="" class="button small border" style="width:100px;">방제 사전</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="table mt-8 type2 bnNone">
+                                <table>
+                                    <colgroup>
+                                        <col width="50">
+                                        <col>
+                                        <col width="200">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col width="60">
+                                    </colgroup>
+                                    <thead>
+                                        <th>No.</th>
+                                        <th>약재명</th>
+                                        <th>원산지</th>
+                                        <th>첩량</th>
+                                        <th>약재량</th>
+                                        <th>약재비</th>
+                                        <th>삭제</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>
+                                                <div class="select" style="border:none;padding:0;">
+                                                    <select name="" id="">
+                                                        <option value="">약재명</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td>국산</td>
+                                            <td>1.00</td>
+                                            <td>100.00g</td>
+                                            <td>20,000원</td>
+                                            <td>
+                                                <a href=""><img src="./assets/images/ico_del.png" alt="" class="m-auto"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mint">=</td>
+                                            <td class="mint">2味</td>
+                                            <td class="mint">-</td>
+                                            <td class="mint">2.00g</td>
+                                            <td class="mint">2.00g</td>
+                                            <td class="mint">40,000원</td>
+                                            <td class="mint">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="7" class="mint result">첩당 4,000원</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="table mt-8">
+                                <header class="table__header">
+                                    <h3>추가 법제</h3>
+                                </header>
+                                <table>
+                                    <colgroup>
+                                        <col width="125">
+                                        <col>
+                                        <col width="125">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>첩수</th>
+                                            <td>
+                                                <div class="select">
+                                                    <select name="" id="">
+                                                        <option value="">0.0 x 20첩</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <th>총 약재량</th>
+                                            <td>
+                                                <div class="input">
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>탕전법</th>
+                                            <td>
+                                                <div class="select">
+                                                    <select name="" id="">
+                                                        <option value="">표준</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <th>탕전방식</th>
+                                            <td>
+                                                <div class="select">
+                                                    <select name="" id="">
+                                                        <option value="">무압</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>팩수</th>
+                                            <td>
+                                                <div class="select">
+                                                    <select name="" id="">
+                                                        <option value="">30팩</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <th>팩용량</th>
+                                            <td>
+                                                <div class="select">
+                                                    <select name="" id="">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>녹용틴트앰플</th>
+                                            <td>
+                                                <div class="select">
+                                                    <select name="" id="">
+                                                        <option value="">없음</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <th>자하거앰플</th>
+                                            <td>
+                                                <div class="select">
+                                                    <select name="" id="">
+                                                        <option value="">없음</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>당도추가</th>
+                                            <td>
+                                                <div class="select">
+                                                    <select name="" id="">
+                                                        <option value="">없음</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <th>당도선택</th>
+                                            <td>
+                                                <div class="select">
+                                                    <select name="" id="">
+                                                        <option value="">올리고당</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="col right">
+                            <div class="">
+                                <header class="table__header">
+                                    <h3>방제 검색 / 약제 검색</h3>
+                                </header>
+                                <div class="tabLinks flex items-center">
+                                    <a href="" class="active">이전 처방</a>
+                                    <span class="bar">|</span>
+                                    <a href="">개인 방제</a>
+                                    <span class="bar">|</span>
+                                    <a href="">방제 사전</a>
+                                    <span class="bar">|</span>
+                                    <a href="">약제 검색</a>
+                                </div>
+                                <div class="form-box mb-4">
+                                    <div class="search mb-4">
+                                        <input type="text">
+                                        <button type="submit">검색</button>
+                                    </div>
+                                    <div class="radiobox flex ml-auto initial">
+                                        <label for="ck0" class="checkItem">
+                                            <input type="radio" name="date" id="ck0" hidden="" checked>
+                                            <span>전체</span>
+                                        </label>
+                                        <label for="ck1" class="checkItem">
+                                            <input type="radio" name="date" id="ck1" hidden="">
+                                            <span>ㄱ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㄴ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㄷ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㄹ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㅁ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㅂ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㅅ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㅇ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㅈ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㅊ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㅋ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㅌ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㅍ</span>
+                                        </label>
+                                        <label for="ck2" class="checkItem">
+                                            <input type="radio" name="date" id="ck2" hidden="">
+                                            <span>ㅎ</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="table type2 table--order">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col width="60">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>약재명</th>
+                                                <th>원산지</th>
+                                                <th>가격(g)</th>
+                                                <th>적용</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="4" style="text-align:left;">
+                                                    총 검색 건수  <span class="mint">12</span> 건
+                                                </td>
+                                            </tr>
+                                            {% for item in [1,1,1,1,1,1,1,1,1,1]%}
+                                                <tr>
+                                                    <td>약재명</td>
+                                                    <td>중국</td>
+                                                    <td>150원</td>
+                                                    <td>
+                                                        <button>
+                                                            <img src="./assets/images/ico_plus-2.png" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                {%endfor%}
+                                            </tbody>
+                                        </table>
+
+                                        <div class="pagination small mb-4">
+                                            <a href="" class="arrow arrow-prev">이전</a>
+                                            <a href="" class="active">1</a>
+                                            <a href="" class="">2</a>
+                                            <a href="" class="">3</a>
+                                            <a href="" class="">4</a>
+                                            <a href="" class="">5</a>
+                                            <a href="" class="arrow arrow-next">다음</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {# <div class="action-box flex justify-end bottomBtn">
+                            <a href="" class="button small">처방전 임시저장</a>
+                            <a href="" class="button small mint">다음단계(배송정보입력)</a>
+                        </div> #}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}

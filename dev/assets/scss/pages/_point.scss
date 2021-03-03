@@ -1,0 +1,39 @@
+.point__total {
+    .col {
+        width: 150px;
+        padding: 15px 0;
+        text-align: center;
+        background: #4eb8a1;
+        .tit {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .txt {
+            font-size: 22px;
+            color: #fff;
+            font-weight: 600;
+            span {
+                font-weight: 400;
+            }
+        }
+        & ~ .col {
+            margin-left: 20px;
+        }
+    }
+}
+
+.point {
+    .board-table-info {
+        span {
+            &.bar {
+                font-size: 12px;
+                color: #e1e1e1;
+                margin: 0 15px;
+            }
+            .mint {
+                color: #4eb8a1;
+            }
+        }
+    }
+}

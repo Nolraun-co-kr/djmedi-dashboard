@@ -1,0 +1,23 @@
+.button {
+    &.small {
+        width: 200px;
+        height: 45px;
+        font-size: 16px;
+        color: #fff !important;
+        background: #606060;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 45px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &.mint {
+        background: #66b39e;
+    }
+    &.border {
+        background: none;
+        border: 1px solid #e1e1e1;
+        color: #606060 !important;
+    }
+}

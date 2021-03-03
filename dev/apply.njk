@@ -1,0 +1,217 @@
+{% extends 'layout/base.njk' %}
+{% block content %}
+    <div class="container">
+        <div class="sub apply signup">
+            <div class="wrap">
+                <div class="breadcrumb">
+                    <span class="">Home</span>
+                    <span class="active">한의원 신청</span>
+                </div>
+                <div>
+                    <div class="section__title text-center">
+                        <h2>한의원 신청</h2>
+                        <div class="desc">
+                            <p>
+                                한의원의 경우 계약서와 사업자등록증을 보내주셔야 관리자의 승인이 이루어집니다.<br/>
+                                한의원 개설 등록증을 제외한 모든 서류는 다운받으신 문서에 포함되어 있습니다.<br/>
+                                *표시한 문서에 한의원 정보를 기입해주세요.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="apply__links flex justify-end items-center">
+                        <a href="">서류양식 다운로드 </a>
+                        <a href="">온라인 가입절차 안내</a>
+                    </div>
+
+                    <div class="section__body">
+                        <div class="apply__content flex justify-between document">
+                            <div class="col">
+                                <h3>원외탕전실에 보내실 서류</h3>
+                                <ul class="dotlist">
+                                    <li class="dots">탕전실 공동이용 계약서 원본 *</li>
+                                    <li class="dots">한의원 의료기관 개설 등록증 사본</li>
+                                    <li class="dots">한의사 면허증사본</li>
+                                    <li class="dots">재직증명서</li>
+                                </ul>
+                                <p>
+                                    22126 인천광역시 남구 길파로41번길 84 (주안동)<br/>
+                                    원외탕전실 행정담당자 앞
+                                </p>
+                            </div>
+                            <div class="col">
+                                <h3>원외탕전실에 보내실 서류</h3>
+                                <ul class="dotlist">
+                                    <li class="dots">한의원 의료기관 개설 등록증 원본</li>
+                                    <li class="dots">원외탕전실 공동이용 계약서 사본 *</li>
+                                    <li class="dots">원외탕전실 의료기관 개설신고 증명서</li>
+                                    <li class="dots">의료기관 개설신고 및 신고사항 변경신청서 * - 원외탕전실 공동이용 내역서 *</li>
+                                    <li class="dots">원외탕전실 평면도 및 구조설명서</li>
+                                    <li class="dots">원외탕전실 설치내역 확인서 사본</li>
+                                    <li class="dots">상주 한약사 면허증 사본</li>
+                                    <li class="dots">원외탕전실 사업자등록증 사본</li>
+                                </ul>
+                                <p>
+                                    한의원 관할 보건소 또는 인터넷<br/>
+                                    (보건의료자원통합신고포털 <a href="http://www.hurb.or.kr">http://www.hurb.or.kr</a>) 제출
+                                </p>
+                            </div>
+                        </div>
+                        <div class="apply__content">
+                            <div class="form">
+                                <form action="">
+                                    <div class="signup__section mb-16">
+                                        <div class="signup__section-title flex items-center">
+                                            <h3>한의원 정보</h3>
+                                            <span class="flex">별표(<i>*</i>) 항목은 필수 입력 항목입니다.</span>
+                                        </div>
+                                        <div class="item">
+                                            <div class="row flex items-center">
+                                                <div class="col">
+                                                    <div class="form-tit flex">
+                                                        의료기관명
+                                                        <span class="essential">*</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col flex items-center">
+                                                    <div class="input">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row flex items-center">
+                                                <div class="col">
+                                                    <div class="form-tit flex">
+                                                        사업자번호
+                                                        <span class="essential">*</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col flex items-center biznum">
+                                                    <div class="input">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                    <div class="input">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                    <div class="input">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row flex items-center">
+                                                <div class="col">
+                                                    <div class="form-tit flex">
+                                                        대표자명
+                                                        <span class="essential">*</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col flex items-center">
+                                                    <div class="input">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row flex items-start">
+                                                <div class="col" style="padding-top:15px;">
+                                                    <div class="form-tit flex">
+                                                        사업장 소재지
+                                                        <span class="essential">*</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="col flex items-center mb-4">
+                                                        <div class="input">
+                                                            <input type="text" placeholder="">
+                                                        </div>
+                                                        <button class="btn" type="button">주소찾기</button>
+                                                    </div>
+                                                    <div class="col flex items-center">
+                                                        <div class="input">
+                                                            <input type="text" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row flex items-start">
+                                                <div class="col" style="padding-top:15px;">
+                                                    <div class="form-tit flex">
+                                                        휴대전화번호
+                                                        <span class="essential">*</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="col flex items-center mb-4">
+                                                        <div class="input">
+                                                            <input type="text" placeholder="- 없이 숫자만 입력해주세요.">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row flex items-start">
+                                                <div class="col" style="padding-top:15px;">
+                                                    <div class="form-tit flex">
+                                                        팩스번호
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="col flex items-center mb-4">
+                                                        <div class="input">
+                                                            <input type="text" placeholder="- 없이 숫자만 입력해주세요.">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row flex items-start">
+                                                <div class="col" style="padding-top:15px;">
+                                                    <div class="form-tit flex leading-6">
+                                                        세금계산서<br/>
+                                                        수신 이메일
+                                                        <span class="essential">*</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="col flex items-center mb-4">
+                                                        <div class="input">
+                                                            <input type="text" placeholder="- 없이 숫자만 입력해주세요.">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accounts__btnBox">
+                                        <a href="" class="btn">한의원 신청</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# modal #}
+        <div class="modal">
+            <div class="modal__content">
+                <header class="modal__header">
+                    <h2 class="modal__title">온라인 가입절차</h2>
+                    <button class="modal__close">닫기</button>
+                </header>
+                <div class="modal__body">
+                    <div class="subTit flex items-center justify-between">
+                        <h3>온라인 가입절차 안내</h3>
+                        <a href="" class="button small mint">PDF 다운로드</a>
+                    </div>
+                    <div class="scroll cont">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illo mollitia saepe sapiente? Adipisci amet animi aspernatur beatae corporis dolor eum expedita explicabo, iure laboriosam minus molestias nam necessitatibus nemo non odit provident quasi quisquam, quos reiciendis reprehenderit rerum saepe sequi sint ullam vero voluptates? Cumque cupiditate deserunt dignissimos fuga fugit harum necessitatibus vero! Delectus dicta hic ipsa nesciunt nulla omnis quos, reprehenderit saepe? Dolor impedit magni minima molestias nobis rem rerum suscipit. Ab amet at autem blanditiis consectetur deleniti dignissimos dolores earum exercitationem facere laborum magnam modi molestiae molestias, mollitia non officia perspiciatis placeat quas quibusdam quisquam repellat similique!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illo mollitia saepe sapiente? Adipisci amet animi aspernatur beatae corporis dolor eum expedita explicabo, iure laboriosam minus molestias nam necessitatibus nemo non odit provident quasi quisquam, quos reiciendis reprehenderit rerum saepe sequi sint ullam vero voluptates? Cumque cupiditate deserunt dignissimos fuga fugit harum necessitatibus vero! Delectus dicta hic ipsa nesciunt nulla omnis quos, reprehenderit saepe? Dolor impedit magni minima molestias nobis rem rerum suscipit. Ab amet at autem blanditiis consectetur deleniti dignissimos dolores earum exercitationem facere laborum magnam modi molestiae molestias, mollitia non officia perspiciatis placeat quas quibusdam quisquam repellat similique!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illo mollitia saepe sapiente? Adipisci amet animi aspernatur beatae corporis dolor eum expedita explicabo, iure laboriosam minus molestias nam necessitatibus nemo non odit provident quasi quisquam, quos reiciendis reprehenderit rerum saepe sequi sint ullam vero voluptates? Cumque cupiditate deserunt dignissimos fuga fugit harum necessitatibus vero! Delectus dicta hic ipsa nesciunt nulla omnis quos, reprehenderit saepe? Dolor impedit magni minima molestias nobis rem rerum suscipit. Ab amet at autem blanditiis consectetur deleniti dignissimos dolores earum exercitationem facere laborum magnam modi molestiae molestias, mollitia non officia perspiciatis placeat quas quibusdam quisquam repellat similique!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illo mollitia saepe sapiente? Adipisci amet animi aspernatur beatae corporis dolor eum expedita explicabo, iure laboriosam minus molestias nam necessitatibus nemo non odit provident quasi quisquam, quos reiciendis reprehenderit rerum saepe sequi sint ullam vero voluptates? Cumque cupiditate deserunt dignissimos fuga fugit harum necessitatibus vero! Delectus dicta hic ipsa nesciunt nulla omnis quos, reprehenderit saepe? Dolor impedit magni minima molestias nobis rem rerum suscipit. Ab amet at autem blanditiis consectetur deleniti dignissimos dolores earum exercitationem facere laborum magnam modi molestiae molestias, mollitia non officia perspiciatis placeat quas quibusdam quisquam repellat similique!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illo mollitia saepe sapiente? Adipisci amet animi aspernatur beatae corporis dolor eum expedita explicabo, iure laboriosam minus molestias nam necessitatibus nemo non odit provident quasi quisquam, quos reiciendis reprehenderit rerum saepe sequi sint ullam vero voluptates? Cumque cupiditate deserunt dignissimos fuga fugit harum necessitatibus vero! Delectus dicta hic ipsa nesciunt nulla omnis quos, reprehenderit saepe? Dolor impedit magni minima molestias nobis rem rerum suscipit. Ab amet at autem blanditiis consectetur deleniti dignissimos dolores earum exercitationem facere laborum magnam modi molestiae molestias, mollitia non officia perspiciatis placeat quas quibusdam quisquam repellat similique!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

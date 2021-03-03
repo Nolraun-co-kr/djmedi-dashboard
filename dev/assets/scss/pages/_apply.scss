@@ -1,0 +1,76 @@
+.apply {
+    .section__title {
+        .desc {
+            margin-bottom: 20px;
+        }
+    }
+}
+.apply__links {
+    margin-bottom: 50px;
+    a {
+        position: relative;
+        font-size: 18px;
+        color: #606060;
+        line-height: 30px;
+        padding-right: 40px;
+        background: url('../images/ico_arrow-mint.png') no-repeat right center;
+        & ~ a {
+            margin-left: 40px;
+        }
+        &::after {
+            content: '';
+            width: 80%;
+            height: 1px;
+            background: #606060;
+            position: absolute;
+            left:0;
+            bottom: 0;
+        }
+    }
+}
+.apply__content {
+    &.document {
+        margin-bottom: 150px;
+        .col {
+            flex: 1;
+            & ~ .col {
+                margin-left: 100px;
+            }
+        }
+        h3 {
+            font-size: 22px;
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        ul {
+            padding: 30px 0;
+            @apply border-t border-b;
+            border-color: #606060;
+            height: 348px;
+            margin-bottom: 20px;
+            li {
+                letter-spacing: -0.05em;
+            }
+        }
+        p {
+            font-size: 18px;
+            color: #000;
+            line-height: 33px;
+            a {
+                color: #4eb8a1;
+            }
+        }
+    }
+    .biznum {
+        .input {
+            width: 140px;
+            margin-right: 20px;
+        }
+    }
+}
+.apply-complete {
+    .accounts__btnBox {
+        width: calc(580px / 2);
+    }
+}

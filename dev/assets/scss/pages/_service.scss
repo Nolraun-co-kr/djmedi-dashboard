@@ -1,0 +1,176 @@
+.service {
+    .section__title .desc {
+        margin-bottom: 50px;
+    }
+    .form-area {
+        border:none;
+    }
+    .service__head {
+        margin-bottom: 20px;
+        h3 {
+            font-size: 30px;
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 16px;
+            color: #606060;
+            i {
+                font-style: normal;
+                color: #47b59d;
+            }
+        }
+    }
+}
+.service--notice {
+    .notice__item {
+        background: none;
+        padding: 0 10px;
+        border:none;
+        .date {
+            padding-top: 5px;
+        }
+        .txt {
+            text-align: left;
+        }
+    }
+    .board-detail {
+        border: 1px solid #e1e1e1;
+        padding: 20px;
+        p {
+            font-style: 20px;
+            color: #606060;
+            line-height: 28px;
+        }
+    }
+
+    .pageBtn {
+        .date {
+            span {
+                color: #606060;
+            }
+        }
+        .txt {
+            h3, p{
+                color: #606060;
+            }
+        }
+        &.prev {
+            padding-left: 60px;
+            background: url('../images/ico_notice-2.png') no-repeat left center;
+        }
+        &.next {
+            padding-right:20px;
+            background: url('../images/ico_notice-3.png') no-repeat right center;
+        }
+    }
+}
+
+.service {
+    .slick-arrow {
+        width: 31px;
+        height: 31px;
+        background: url('../images/ico_notice-4.png') no-repeat center;
+        display: block !important;
+        position: absolute;
+        top :50%;
+        transform: translateY(-50%);
+        text-indent: -9999px;
+        overflow: hidden;
+        z-index: 99;
+        &.slick-prev {
+            left: 70px;
+        }
+        &.slick-next {
+            right: 70px;
+            background: url('../images/ico_arrow-circle.png') no-repeat center;
+        }
+    }
+
+    .feature {
+        justify-content: center;
+        margin-top: 80px;
+        li {
+            padding: 0 80px;
+            position: relative;
+            &::after {
+                content: '';
+                width: 1px;
+                height: 70px;
+                background: #e1e1e1;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        h3 {
+            font-size: 22px;
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 16px;
+            color: #606060;
+            line-height: 24px;
+        }
+    }
+    .character {
+        padding: 50px 0;
+        background: url('../images/system-2.png') no-repeat right center;
+        background-size: contain;
+    }
+}
+
+.download__content {
+    ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin:0 -20px;
+        li {
+            width: 20%;
+            padding: 0 20px;
+            &:nth-child(n+5){
+                margin-top: 40px;
+            }
+        }
+        .inner {
+            border: 1px solid #ebebeb;
+        }
+        .img {
+            padding: 0 30px;
+            height: 190px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #ebebeb;
+            img {
+                width: 150px;
+            }
+        }
+        .txt {
+            padding: 15px;
+            p {
+                font-size: 14px;
+                color: #000;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+            .downloadBtn {
+                display: flex;
+                width: 100%;
+                height: 35px;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

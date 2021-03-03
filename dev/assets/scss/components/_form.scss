@@ -1,0 +1,190 @@
+.input {
+    width: 100%;
+    height: 58px;
+    border: 1px solid #e1e1e1;
+    input {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        padding: 0 1em;
+        background: #fff;
+        &::placeholder {
+            color: #c2c2c2;
+            font-size: 16px;
+        }
+    }
+    & + .btn {
+        width: 170px;
+        height: 58px;
+        border: 1px solid #e1e1e1;
+        margin-left: 15px;
+        font-size: 20px;
+        color: #606060;
+        background: #fafafa;
+    }
+}
+.input-info {
+    font-size: 16px;
+    color: #4eb8a1;
+    margin-top: 10px;
+}
+.form-area {
+    padding: 15px 0;
+    @apply border-t border-b;
+    border-color: #e1e1e1;
+    margin: 40px 0;
+}
+.serach-area {
+    display: flex;
+    align-items: center;
+    .tit {
+        font-style: 18px;
+        color: #606060;
+        margin-right: 10px;
+    }
+}
+.search {
+    border: 1px solid #e1e1e1;
+    width: 415px;
+    display: flex;
+    input {
+        height: 38px;
+        padding: 0 1em;
+        flex: 1;
+    }
+    button {
+        width: 40px;
+        flex: none;
+        background: url('../images/ico_search.png') no-repeat center #fafafa;
+        text-indent: -9999px;
+        overflow: hidden;
+        border-left: 1px solid #e1e1e1;
+    }
+}
+
+.link-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        font-size: 20px;
+        color: #606060;
+        padding-right: 1em;
+        margin-right: 1em;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            width: 2px;
+            height: 18px;
+            background: #606060;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        &.active {
+            color: #4eb8a1;
+            text-decoration: underline;
+        }
+    }
+}
+.textarea {
+    height: 290px;
+    border: 1px solid #e1e1e1;
+    textarea {
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        line-height: 1.5em;
+        font-size: 14px;
+        color: #606060;
+        overflow: auto;
+        resize: none;
+        &::placeholder {
+            font-size: 14px;
+            color: #606060;
+        }
+    }
+}
+.radiobox {
+    &.type2 {
+        .checkItem {
+            font-size: 16px;
+            color: #202020;
+            margin: 0;
+            margin-right: 20px;
+            span {
+                width: 20px;
+                height: 20px;
+                border: 1px solid #e4e4e4;
+                margin-right: 10px;
+                padding: 0;
+                border-radius: 50%;
+                position: relative;
+            }
+            input:checked + span {
+                background: none;
+                &::after {
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    background: #47b59d;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+.checkItem {
+    display: flex;
+    margin: 2px;
+    span {
+        line-height: 28px;
+        border: 1px solid #606060;
+        background: #fff;
+        color: #606060;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all .3s;
+        padding: 0 1em;
+        border-radius: 2em;
+    }
+    input:checked + span {
+      background:#606060;
+      border-color:#606060;
+      color:#fff;
+    }
+}
+
+.initial {
+    border: 1px solid #e1e1e1;
+    .checkItem {
+        margin: 0;
+        flex: 1;
+        span {
+            flex: 1;
+            line-height: 25px;
+            border: none;
+            border-right: 1px solid #e1e1e1;
+            border-radius: 0;
+            padding: 0;
+            text-align: center;
+        }
+        &:last-child {
+            span {
+                border-right: none;
+            }
+        }
+    }
+}
+
