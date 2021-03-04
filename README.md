@@ -4,7 +4,7 @@
 | 페이지 명 |  링크 |
 |--------|--------:|
 | 안심원외탕전실 main | [:link:](https://loving-wing-2390d9.netlify.app/index.html) |
-| 안심원외탕전실 메인로그인상태01 | [:link:](https://loving-wing-2390d9.netlify.app/) |
+| 안심원외탕전실 메인로그인상태01 | [:link:](https://loving-wing-2390d9.netlify.app/login-state.html) |
 | sub 처방하기_처방전07 | [:link:](https://loving-wing-2390d9.netlify.app/prescription.html) |
 | sub_간편환자추가 팝업 | [:link:](https://loving-wing-2390d9.netlify.app/shipping.html) |
 | sub_개인방제집 | [:link:](https://loving-wing-2390d9.netlify.app/personal-bangje.html) |
@@ -22,7 +22,7 @@
 | sub_방제사전2 | [:link:](https://loving-wing-2390d9.netlify.app/bangjedetail.html) |
 | sub_사진처방 보관함 | [:link:](https://loving-wing-2390d9.netlify.app/pre.html) |
 | sub_실속처방 상품자세히 | [:link:](https://loving-wing-2390d9.netlify.app/normaldetail.html) |
-| sub_실속처방 오른쪽 창 | [:link:](https://loving-wing-2390d9.netlify.app/) |
+| sub_실속처방 오른쪽 창 | [:link:](https://loving-wing-2390d9.netlify.app/normaldetail.html) |
 | sub_실속처방 주문 | [:link:](https://loving-wing-2390d9.netlify.app/normal.html) |
 | sub_안심탕제실_처방하기_배송지입력 | [:link:](https://loving-wing-2390d9.netlify.app/shipping-2.html) |
 | sub_안심탕제실_처방하기 | [:link:](https://loving-wing-2390d9.netlify.app/shipping.html) |
@@ -34,18 +34,18 @@
 | sub_약속처방_배송지 입력 및 탕전실 접수 | [:link:](https://loving-wing-2390d9.netlify.app/yacksok-resister.html) |
 | sub_약속처방_사전처방 발송요청_내용변경 | [:link:](https://loving-wing-2390d9.netlify.app/yacksok-modify.html) |
 | sub_약속처방 | [:link:](https://loving-wing-2390d9.netlify.app/yacksok.html) |
-| sub_약속처방주문-상세페이지 | [:link:](https://loving-wing-2390d9.netlify.app/) |
-| sub_약속처방주문-상세페이지2 | [:link:](https://loving-wing-2390d9.netlify.app/) |
-| sub_약속처방주문-상세페이지3 | [:link:](https://loving-wing-2390d9.netlify.app/) |
-| sub_약속처방주문-상세페이지4_팝업 | [:link:](https://loving-wing-2390d9.netlify.app/) |
-| sub_약속처방주문-상세페이지4_팝업2 | [:link:](https://loving-wing-2390d9.netlify.app/) |
-| sub_약속처방주문-상세페이지4_팝업3 | [:link:](https://loving-wing-2390d9.netlify.app/) |
-| sub_약속처방주문-상세페이지4-1 | [:link:](https://loving-wing-2390d9.netlify.app/) |
-| sub_약속처방주문-상세페이지4 | [:link:](https://loving-wing-2390d9.netlify.app/) |
+| sub_약속처방주문-상세페이지 | [:link:](https://loving-wing-2390d9.netlify.app/yacksokdetail.html) |
+| sub_약속처방주문-상세페이지2 | [:link:](https://loving-wing-2390d9.netlify.app/yacksokdetail-2.html) |
+| sub_약속처방주문-상세페이지3 | [:link:](https://loving-wing-2390d9.netlify.app/yacksokdetail-2.html) |
+| sub_약속처방주문-상세페이지4_팝업 | [:link:](https://loving-wing-2390d9.netlify.app/yacksokdetail-2.html) |
+| sub_약속처방주문-상세페이지4_팝업2 | [:link:](https://loving-wing-2390d9.netlify.app/yacksokdetail-2.html) |
+| sub_약속처방주문-상세페이지4_팝업3 | [:link:](https://loving-wing-2390d9.netlify.app/yacksokdetail-2.html) |
+| sub_약속처방주문-상세페이지4-1 | [:link:](https://loving-wing-2390d9.netlify.app/yacksokdetail-2.html) |
+| sub_약속처방주문-상세페이지4 | [:link:](https://loving-wing-2390d9.netlify.app/yacksokdetail-2-1.html) |
 | sub_예치금적립금-예치 | [:link:](https://loving-wing-2390d9.netlify.app/point-1.html) |
 | sub_예치금적립금-예치2 | [:link:](https://loving-wing-2390d9.netlify.app/point-1.html) |
 | sub_예치금적립금-적립2 | [:link:](https://loving-wing-2390d9.netlify.app/point-2.html) |
-| sub_이용약관 | [:link:](https://loving-wing-2390d9.netlify.app/) |
+| sub_이용약관 | [:link:](https://loving-wing-2390d9.netlify.app/terms-2.html) |
 | sub_장바구니 | [:link:](https://loving-wing-2390d9.netlify.app/cart.html) |
 | sub_장바구니2 | [:link:](https://loving-wing-2390d9.netlify.app/cart.html) |
 | sub_조제지시 | [:link:](https://loving-wing-2390d9.netlify.app/option-prepare.html) |
@@ -62,7 +62,7 @@
 | sub_처방하기_01 | [:link:](https://loving-wing-2390d9.netlify.app/shipping.html) |
 | sub_처방하기_처방환자03 | [:link:](https://loving-wing-2390d9.netlify.app/shipping.html) |
 | sub_처방하기 | [:link:](https://loving-wing-2390d9.netlify.app/shipping.html) |
-| sub_첩약보험 자료실 | [:link:](https://loving-wing-2390d9.netlify.app/) |
+| sub_첩약보험 자료실 | [:link:](https://loving-wing-2390d9.netlify.app/insurance.html) |
 | sub_한의사관리 | [:link:](https://loving-wing-2390d9.netlify.app/doctor.html) |
 | sub_한의사관리2 | [:link:](https://loving-wing-2390d9.netlify.app/doctor.html) |
 | sub_한의사관리3 | [:link:](https://loving-wing-2390d9.netlify.app/doctor.html) |
@@ -72,9 +72,9 @@
 | sub_한의원신청 | [:link:](https://loving-wing-2390d9.netlify.app/apply.html) |
 | sub_한의원신청2 | [:link:](https://loving-wing-2390d9.netlify.app/apply-complete.html) |
 | sub_한의원신청3 | [:link:](https://loving-wing-2390d9.netlify.app/apply.html) |
-| sub_환자관리 | [:link:](https://loving-wing-2390d9.netlify.app/) |
-| sub_환자관리2 | [:link:](https://loving-wing-2390d9.netlify.app/) |
-| sub_환자관리3 | [:link:](https://loving-wing-2390d9.netlify.app/) |
+| sub_환자관리 | [:link:](https://loving-wing-2390d9.netlify.app/patientcare.html) |
+| sub_환자관리2 | [:link:](https://loving-wing-2390d9.netlify.app/patientcare.html) |
+| sub_환자관리3 | [:link:](https://loving-wing-2390d9.netlify.app/patientcare.html) |
 | sub_회원가입 | [:link:](https://loving-wing-2390d9.netlify.app/signup.html) |
 | sub_회원가입3 | [:link:](https://loving-wing-2390d9.netlify.app/signup.html) |
 | sub_회원탈퇴 | [:link:](https://loving-wing-2390d9.netlify.app/withdrawal.html) |

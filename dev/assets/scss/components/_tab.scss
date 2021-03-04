@@ -32,3 +32,13 @@
     color: #000;
     line-height: 24px;
 }
+
+.tab {
+    &.type2 {
+        .tab__panel {
+            padding: 0;
+            border: none;
+            margin-top: 20px;
+        }
+    }
+}

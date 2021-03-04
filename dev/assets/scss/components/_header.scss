@@ -10,7 +10,7 @@
     a {
         font-size: 14px;
         color: #000;
-        padding: 0 1em;
+        padding: 1em;
         font-weight: 500;
         position: relative;
         &::after {
@@ -29,6 +29,10 @@
         &:last-child {
             padding-right: 0;
         }
+        &.mypage {
+            padding-right: 40px;
+            background: url('../images/ico_user.png') no-repeat right center;
+        }
     }
 }
 .header__gnb {
@@ -40,5 +44,9 @@
         font-weight: 500;
         color: #000;
         padding: 0 25px;
+        font-weight: 600;
+        &.active {
+            color: #4eb8a1;
+        }
     }
 }

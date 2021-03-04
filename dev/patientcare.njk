@@ -1,0 +1,425 @@
+{% extends 'layout/base.njk' %}
+{% block content %}
+    <div class="container">
+        <div class="sub order order2">
+            <div class="wrap">
+                <div class="breadcrumb">
+                    <span class="">Home</span>
+                    <span class="">안심탕제실</span>
+                    <span class="active">환자관리</span>
+                </div>
+                <div>
+                    <div class="section__title text-center">
+                        <h2>환자관리</h2>
+                        <div class="desc">
+                            <p>
+                                도움말도움말도움말도움말도움말도움말도움말도움말도움말<br/>
+                                도움말도움말도움말도움말도움말도움말<br/>
+                                도움말도움말도움말도움말
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="board-table-info">
+                            <span>
+                                <i>10</i>명의 환자가 검색되었습니다.
+                            </span>
+                            <div class="select" style="width:145px;">
+                                <select name="" id="">
+                                    <option value="">10개씩 보기</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="table board-table">
+                            <table>
+                                <colgroup>
+                                    <col width="40">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col width="300">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col width="60">
+                                    <col width="60">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            <label for="c0" class="checkbox justify-center">
+                                                <input type="checkbox" id="c0" hidden="">
+                                                <span></span>
+                                            </label>
+                                        </th>
+                                        <th>차트번호</th>
+                                        <th>환자명</th>
+                                        <th>성별</th>
+                                        <th>나이</th>
+                                        <th>생년월일</th>
+                                        <th>주소</th>
+                                        <th>전화번호</th>
+                                        <th>휴대폰번호</th>
+                                        <th>최근처방일</th>
+                                        <th>보기</th>
+                                        <th>삭제</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label for="c1" class="checkbox justify-center">
+                                                <input type="checkbox" id="c1" hidden="">
+                                                <span></span>
+                                            </label>
+                                        </td>
+                                        <td class="text-center">1234567</td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">남성</td>
+                                        <td class="text-center">20</td>
+                                        <td class="text-center">1978912</td>
+                                        <td class="text-center">경기도 고양시 일산동구 장항동 849번지 동양메이저타워 1234호</td>
+                                        <td class="text-center">0212345678</td>
+                                        <td class="text-center">01012345678</td>
+                                        <td class="text-center">
+                                            YYYY.MM.DD
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn text-center">보기</a>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn text-center">삭제</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="flex patientcare__form-area mt-4">
+                            <div class="action-box flex">
+                                <a href="" class="button small mint">환자추가</a>
+                            </div>
+                            <div class="flex ml-auto">
+                                <div class="select mr-2">
+                                    <select name="" id="">
+                                        <option value="">환자명</option>
+                                    </select>
+                                </div>
+                                <div class="search">
+                                    <input type="text">
+                                    <button type="submit">검색</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination mt-8">
+                        <a href="" class="arrow arrow-prev">이전</a>
+                        <a href="" class="active">1</a>
+                        <a href="" class="">2</a>
+                        <a href="" class="">3</a>
+                        <a href="" class="">4</a>
+                        <a href="" class="">5</a>
+                        <a href="" class="arrow arrow-next">다음</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# modal 환자추가 #}
+        <div class="modal modal--patientcare">
+            <div class="modal__content">
+                <header class="modal__header">
+                    <h2 class="modal__title">환자추가</h2>
+                    <button class="modal__close">닫기</button>
+                </header>
+                <div class="modal__body pd10">
+                    <div class="subTit flex items-center justify-between">
+                        <h3>환자 정보 관리를 통해~~~</h3>
+                    </div>
+                    <div class="cont">
+                        <div class="row mb-4">
+                            <div class="table pdModify">
+                                <table>
+                                    <colgroup>
+                                        <col width="140">
+                                        <col>
+                                        <col width="140">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-left">환자명<span class="mint">*</span></th>
+                                            <td colspan="3">
+                                                <div class="input flex items-center h45">
+                                                    <input type="text" class="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-left">환자 존칭<span class="mint">*</span></th>
+                                            <td>
+                                                <div class="flex">
+                                                    <div class="input flex items-center h45">
+                                                        <input type="text" class="" placeholder="예 ) 홍길동 님 귀하">
+                                                    </div>
+                                                    <button class="button small ml-2 mint">저장</button>
+                                                </div>
+                                            </td>
+                                            <th class="text-left">별칭</th>
+                                            <td>
+                                                <div class="input flex items-center h45">
+                                                    <input type="text" class="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-left">차트 번호</th>
+                                            <td>
+                                                <div class="input flex items-center h45">
+                                                    <input type="text" class="">
+                                                </div>
+                                            </td>
+                                            <th class="text-left">그룹 관리</th>
+                                            <td>
+                                                <div class="flex">
+                                                    <div class="select h45">
+                                                        <select name="" id="">
+                                                            <option value="">1 그룹명</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="select mx-2">
+                                                        <select name="" id="">
+                                                            <option value="">2 그룹명</option>
+                                                        </select>
+                                                    </div>
+                                                    <button class="button small mint">그룹추가</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-left">나이</th>
+                                            <td>
+                                                <div class="flex">
+                                                    <div class="input flex items-center h45 mr-2">
+                                                        <input type="text" class="text-right">
+                                                        <span class="pr-3">세</span>
+                                                    </div>
+                                                    <div class="input flex items-center h45 disabled">
+                                                        <input type="text" class="" disabled>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <th class="text-left">결혼여부/ 국적</th>
+                                            <td>
+                                                <div class="flex">
+                                                    <div class="select h45">
+                                                        <select name="" id="">
+                                                            <option value="">선택</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="select mx-2">
+                                                        <select name="" id="">
+                                                            <option value="">한국</option>
+                                                        </select>
+                                                    </div>
+                                                    <button class="button small mint">국가추가</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-left">생년월일</th>
+                                            <td>
+                                                <div class="flex">
+                                                    <div class="input flex items-center h45">
+                                                        <input type="text" class="text-right">
+                                                        <span class="pr-3">년</span>
+                                                    </div>
+                                                    <div class="input flex items-center h45 mx-2">
+                                                        <input type="text" class="text-right">
+                                                        <span class="pr-3">월</span>
+                                                    </div>
+                                                    <div class="input flex items-center h45">
+                                                        <input type="text" class="text-right">
+                                                        <span class="pr-3">일</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <th class="text-left">금년생일</th>
+                                            <td>
+                                                <div class="flex">
+                                                    <div class="input flex items-center h45 disabled">
+                                                        <input type="text" class="text-right" disabled>
+                                                        <span class="pr-3">년</span>
+                                                    </div>
+                                                    <div class="input flex items-center h45 mx-2 disabled">
+                                                        <input type="text" class="text-right" disabled>
+                                                        <span class="pr-3">월</span>
+                                                    </div>
+                                                    <div class="input flex items-center h45 disabled">
+                                                        <input type="text" class="text-right" disabled>
+                                                        <span class="pr-3">일</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="table pdModify">
+                                <table>
+                                    <colgroup>
+                                        <col width="140">
+                                        <col>
+                                        <col width="140">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-left">주민번호 앞자리</th>
+                                            <td colspan="">
+                                                <div class="input flex items-center h45">
+                                                    <input type="text" class="">
+                                                </div>
+                                            </td>
+                                            <th class="text-left">별칭</th>
+                                            <td>
+                                                <div class="select w-full">
+                                                    <select>
+                                                        <option value="">선택</option>
+                                                    </selec>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-left">전화번호1/ 장소</th>
+                                            <td>
+                                                <div class="flex">
+                                                    <div class="input flex items-center h45">
+                                                        <input type="text" class="" placeholder="">
+                                                    </div>
+                                                    <div class="select ml-2 w-full">
+                                                        <select>
+                                                            <option value="">선택</option>
+                                                        </selec>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <th class="text-left">그룹 관리</th>
+                                            <td>
+                                                <div class="flex">
+                                                    <div class="input flex items-center h45">
+                                                        <input type="text" class="" placeholder="">
+                                                    </div>
+                                                    <div class="select ml-2 w-full">
+                                                        <select>
+                                                            <option value="">선택</option>
+                                                        </selec>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-left">휴대폰번호</th>
+                                            <td>
+                                                <div class="flex">
+                                                    <div class="input flex items-center h45">
+                                                        <input type="text" class="" placeholder="예 ) 홍길동 님 귀하">
+                                                    </div>
+                                                    <button class="button small ml-2 mint">문자제외</button>
+                                                </div>
+                                            </td>
+                                            <th class="text-left">결혼여부/ 국적</th>
+                                            <td>
+                                                <div class="input flex items-center h45">
+                                                    <input type="text" class="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="table">
+                                <table>
+                                    <colgroup>
+                                        <col width="120">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-left">배송지관리<span class="mint">*</span></th>
+                                            <td>
+                                                <div class="flex">
+                                                    <div class="select">
+                                                        <select name="" id="">
+                                                            <option value="">국내배송</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="select mx-2">
+                                                        <select name="" id="">
+                                                            <option value="">배송장소 선택</option>
+                                                        </select>
+                                                    </div>
+                                                    <button class="button small mint">배송지 추가</button>
+                                                </div>
+                                                <div class="flex my-2">
+                                                    <button class="button small mint">우편번호</button>
+                                                    <div class="input flex items-center h45 disabled" style="width:120px;">
+                                                        <input type="text" class="" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="input flex items-center h45 disabled mr-2">
+                                                        <input type="text" class="" disabled>
+                                                    </div>
+                                                    <div class="input flex items-center h45">
+                                                        <input type="text" class="" placeholder="상세주소">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action-box flex items-center">
+                        <a href="" class="button small ml-auto">취소</a>
+                        <a href="" class="button small mint">확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# modal 환자 정보 삭제 #}
+        <div class="modal">
+            <div class="modal__content type2">
+                <header class="modal__header">
+                    <h2 class="modal__title">메세지</h2>
+                    <button class="modal__close">닫기</button>
+                </header>
+                <div class="modal__body">
+                    <div class="subTit type2">
+                        <h3>
+                            홍길동 환자 정보를 삭제하시겠습니까?
+                        </h3>
+                    </div>
+                    <div class="cont">
+                        <div class="action-box flex justify-center">
+                            <a href="" class="button small mint">확인</a>
+                            <a href="" class="button small">취소</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

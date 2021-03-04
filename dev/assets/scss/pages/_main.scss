@@ -51,3 +51,106 @@
         }
     }
 }
+
+.main__state {
+    .orderState {
+        border: 1px solid #959595;
+        padding: 30px;
+        .col {
+            flex: 1;
+            text-align: center;
+        }
+        .tit {
+            font-size: 20px;
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .txt {
+            font-size: 16px;
+            color: #000;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            line-height: 20px;
+            height: 40px;
+            align-items: center;
+            span {
+                color: #47b59d;
+            }
+        }
+    }
+    .tabLinks {
+        border-top: none !important;
+        a {
+            font-size: 18px !important;
+        }    
+    }
+    .productList {
+        margin: 0 -20px;
+    }
+    .productList__item {
+        width: 20%;
+        padding: 0 20px;
+        &:nth-child(n+5) {
+            margin-top: 0;
+        }
+    }
+    .productList__content {
+        .thumbnail {
+            img {
+                height: 100px;
+            }
+        }
+        .info {
+            .description {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            span {
+                font-size: 10px;
+                line-height: 20px;
+            }
+        }
+        .actions {
+            .button {
+                span {
+                    line-height: 37px;
+                    font-size: 10px;
+                    background-size: auto 14px;
+                    padding-left: 20px;
+                    &.delivery {
+                        padding-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tableList {
+        border-bottom: 1px solid #959595;
+
+        th {
+            font-size: 20px;
+            color: #000;
+            line-height: 60px;
+            text-align: center;
+            border-bottom: 1px solid #959595;
+            border-top: 1px solid #959595;
+        }
+        td {
+            font-size: 16px;
+            color: #606060;
+            line-height: 41px;
+            border-bottom: 1px solid #d7d7d7;
+            text-align: center;
+        }
+        tr {
+            &:last-child {
+                td {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

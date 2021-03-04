@@ -5,3 +5,31 @@
         }
     }
 }
+
+.preRegister {
+    margin-top: 20px;
+    padding: 20px 0;
+    @apply border-t border-b;
+    border-color: #e1e1e1;
+    .txt {
+        font-size: 14px;
+        color: #606060;
+        line-height: 24px;
+    }
+}
+.preRegisterTop {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    border: 1px solid #e1e1e1;
+    padding: 0 30px;
+    .txt {
+        font-size: 14px;
+        color: #606060;
+        line-height: 24px;
+        span {
+            color: #66b39e;
+        }
+    }
+}

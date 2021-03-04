@@ -1,0 +1,405 @@
+{% extends 'layout/base.njk' %}
+{% block content %}
+    <div class="container">
+        <div class="sub prescription__detail order">
+            <div class="wrap">
+                <div class="breadcrumb">
+                    <span class="">Home</span>
+                    <span class="active">약속처방</span>
+                </div>
+                <div class="section__title text-center">
+                    <h2>약속처방</h2>
+                    <div class="desc">
+                        <p>
+                            도움말도움말도움말도움말도움말도움말도움말도움말도움말<br/>
+                            도움말도움말도움말도움말도움말도움말<br/>
+                            도움말도움말도움말도움말
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__summary">
+                        <div class="product__thumbnail">
+                            <div class="top">
+                                <div class="product__thumb">
+                                    <img src="./assets/images/prd-2.png" alt="">
+                                </div>
+                                <div class="product__thumb">
+                                    <img src="./assets/images/prd-2.png" alt="">
+                                </div>
+                                <div class="product__thumb">
+                                    <img src="./assets/images/prd-2.png" alt="">
+                                </div>
+                                <div class="product__thumb">
+                                    <img src="./assets/images/prd-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="product__thumb">
+                                    <img src="./assets/images/prd-2.png" alt="">
+                                </div>
+                                <div class="product__thumb">
+                                    <img src="./assets/images/prd-2.png" alt="">
+                                </div>
+                                <div class="product__thumb">
+                                    <img src="./assets/images/prd-2.png" alt="">
+                                </div>
+                                <div class="product__thumb">
+                                    <img src="./assets/images/prd-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__orderInfo">
+                            <h2 class="product__title">상품명</h2>
+                            <p class="product__description">여름철 갈증, 더위로 인한 원기와 진액 손상, 피로, 마른 기침</p>
+
+                            <div class="tab-area">
+                                <div class="tabLinks flex items-center">
+                                    <a href="#//" data-tabLink="1">상품요약 정보</a>
+                                    <span class="bar">|</span>
+                                    <a href="#//" class="active" data-tabLink="2">사전처방정보</a>
+                                </div>
+                                <div class="tabContents">
+                                    {# 상품요약 정보 #}
+                                    <div class="tabItem">1</div>
+
+                                    {# 사전처방정보 #}
+                                    <div class="tabItem active" style="display:block;">
+                                        <div class="tab type2">
+                                            <div class="tab__nav">
+                                                <a href="" class="tab__navlink active" data-tablink-detail="1">사전처방현황</a>
+                                                <a href="" class="tab__navlink" data-tablink-detail="2">사전처방내역</a>
+                                                <a href="" class="tab__navlink" data-tablink-detail="3">사전처방등록</a>
+                                                <a href="" class="tab__navlink">발송요청</a>
+                                            </div>
+                                            <div class="tab__content">
+                                                {# 사전처방현황 #}
+                                                <div class="tab__panel active" style="display: block;">
+                                                    <div class="table">
+                                                        <table>
+                                                            <colgroup>
+                                                                <col width="120">
+                                                                <col>
+                                                                <col width="120">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>처방명</th>
+                                                                    <td>벽문승방</td>
+                                                                    <th>제형</th>
+                                                                    <td>내용</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>약제구성</th>
+                                                                    <td colspan="3">내용(100g 기준으로 구성)</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>비고</th>
+                                                                    <td colspan="3">※ 위 처방은 100g 기준으로 구성됩니다.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>조제법</th>
+                                                                    <td colspan="3">내용</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>발송가능량</th>
+                                                                    <td>내용</td>
+                                                                    <th>만료일자</th>
+                                                                    <td>YYYY.MM.DD</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                {# 사전처방내역 #}
+                                                <div class="tab__panel">
+                                                    <div class="table bnNone type2 board-table">
+                                                        <table>
+                                                            <colgroup>
+                                                                <col>
+                                                                <col>
+                                                                <col>
+                                                                <col>
+                                                                <col>
+                                                                <col>
+                                                                <col width="70">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <th class="text-center">등록일자</th>
+                                                                <th class="text-center">처방명</th>
+                                                                <th>사전처방량(월)</th>
+                                                                <th>처방기간</th>
+                                                                <th>발송요청가능일</th>
+                                                                <th>처방만료일자</th>
+                                                                <th>삭제</th>
+                                                            </thead>
+                                                            <tbody>
+                                                                {% for item in [1,1,1,1,1]%}
+                                                                    <tr>
+                                                                        <td>YYYY.MM.DD</td>
+                                                                        <td>벽문승방</td>
+                                                                        <td>
+                                                                            <span class="mint">5,000</span> ea
+                                                                        </td>
+                                                                        <td>12개월</td>
+                                                                        <td>YYYY.MM.DD</td>
+                                                                        <td>YYYY.MM.DD</td>
+                                                                        <td>
+                                                                            <img src="./assets/images/ico_del.png" alt="" class="m-auto">
+                                                                        </td>
+                                                                    </tr>
+                                                                    {%endfor%}
+
+                                                                    <tr>
+                                                                        <td colspan="7">
+                                                                            <div class="flex jusitfy-between items-center">
+                                                                                <p class="pl-4">
+                                                                                    총 검색 건수 <span class="mint">12</span> 건
+                                                                                </p>
+                                                                                <div class="pagination small ml-auto" style="margin-top:0;">
+                                                                                    <a href="" class="arrow arrow-prev">이전</a>
+                                                                                    <a href="" class="active">1</a>
+                                                                                    <a href="" class="">2</a>
+                                                                                    <a href="" class="">3</a>
+                                                                                    <a href="" class="">4</a>
+                                                                                    <a href="" class="">5</a>
+                                                                                    <a href="" class="arrow arrow-next">다음</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    {# 사전처방등록 #}
+                                                    <div class="tab__panel">
+                                                        <div class="preRegisterTop">
+                                                            <div class="txt">
+                                                                사전처방 등록 가능량 (<span>XX</span> ea) 이며 최소량 (<span>XX</span> ea) 미만인 경우 추가등록을 하실 수 없습니다.<br/>
+                                                                <span>제품명</span>의 사전처방 최대 등록량 = <span>10,000</spa> ea
+                                                            </div>
+                                                        </div>
+                                                        <div class="preRegister flex items-center">
+                                                            <div class="txt">
+                                                                관련 법령에 의해 사전처방을 등록해 주시면 그에 따라<br/>
+                                                                조제하여 보관 및 발송해드립니다.<br/>
+                                                                월간 사전처방량과 처방기간(지속개월)을 결정하시면<br/>
+                                                                그에 따라 조제가 진행됩니다.
+                                                            </div>
+                                                            <a href="" class="button small ml-auto">사전처방 등록</a>
+                                                        </div>
+                                                    </div>
+                                                    {# <div class="tab__panel">4</div> #}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions flex justify-end">
+                        <a href="" class="button small mint">배송요청</a>
+                    </div>
+
+                    {# 제품 상세 정보 #}
+                    <div class="tab mt-32">
+                        <div class="tab__nav">
+                            <a href="" class="tab__navlink active" data-tablink-detail="1">상품상세</a>
+                            <a href="" class="tab__navlink" data-tablink-detail="2">배송정보</a>
+                            <a href="" class="tab__navlink" data-tablink-detail="3">교환/환불 신청안내</a>
+                            <a href="" class="tab__navlink" data-tablink-detail="4">교환/환불 기준</a>
+                        </div>
+                        <div class="tab__content">
+                            <div class="tab__panel active" style="display: block;">
+                                <div class="table" style="max-width:700px;margin:0 auto;">
+                                    <table>
+                                        <colgroup>
+                                            <col width="120">
+                                            <col>
+                                            <col width="120">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>처방명</th>
+                                                <td>벽문승방</td>
+                                                <th>제형</th>
+                                                <td>내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th>약제구성</th>
+                                                <td colspan="3">
+                                                    <strong>내용(100g 기준으로 구성)</strong>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>비고</th>
+                                                <td colspan="3">※ 위 처방은 100g 기준으로 구성됩니다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>조제법</th>
+                                                <td colspan="3">내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th>발송가능량</th>
+                                                <td>내용</td>
+                                                <th>만료일자</th>
+                                                <td>YYYY.MM.DD</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab__panel" style="">
+                                <p class="order-description">
+                                    - 접수 시점은 매일 밤 12시입니다.<br>
+                                    - 배송 기간은 아래와 같습니다.<br>
+                                    1. 일반 탕제 : 접수 후 2일<br>
+                                    2. 농축 탕제 : 접수 후 3일<br>
+                                    3. 환제·산제 : 접수 후 5일<br>
+                                    - 경옥고·공진단 : 접수 후 2~3일<br>
+                                    - 지역 혹은 택배사에 따라 1~2일 지연 가능<br>
+                                    - 주말 및 공휴일에 접수 된 경우, 다음 날 발송<br>
+                                    - 해외 배송 : 우체국 EMS 이용. 구체적 비용은 지역과 무게에 따라 상이<br>
+                                    - 묶음 배송 : 탕전 처방의 경우 한박스당 30팩 이하에 한해 다른 처방과 묶음 배송 가능, 환제·산제의 경우 처방 전달 사항란에 기재
+                                </p>
+                            </div>
+                            <div class="tab__panel" style="">
+                                <p class="order-description">
+                                    1. 상품을 인도받았는데 교환/환불을 원하시나요? 상품 수령 후 15일 이내에 가능합니다.<br>
+                                    2. 제품이 훼손되거나 고객이 사용한 경우는 교환/환불이 안됩니다.<br>
+                                    3. 제품하자의 교환/반품은 제품 수령일로부터 15일 이내에만 가능합니다.<br>
+                                        - 제품하자의 기준은 객관적이어야 합니다.<br>
+                                        - 15일이 지난 상품에 대해서는 교환/반품 불가능합니다.<br>
+                                    4. 상품의 교환 및 환불은 관세법령에 따라 처리됩니다.
+                                </p>
+                            </div>
+                            <div class="tab__panel" style="">
+                                <p class="order-description">
+                                    상품 수령 후 7일 이내에 신청하실 수 있습니다.<br>
+                                    단, 제품이 내용과 다르거나 불량 등 계약과 다르게 이행된 경우는 제품 수령일부터 3개월 이내,<br>
+                                    그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내에 교환/반품이 가능합니다.<br>
+                                    추가적으로 다 음의 경우 해당하는 반품/교환은 신청이 불가능할 수 있습니다.<br>
+                                    - 소비자의 책임 있는 사유로 상품 등이 멸실 또는 훼손된 경우<br>
+                                    - 소비자의 사용 또는 소비에 의해 상품 등의 가치가 현저히 감소한 경우<br>
+                                    - 시간의 경과에 의해 재판매가 곤란할 정도로 상품 등의 가치가 현저히 감소한 경우<br>
+                                    - 복제가 가능한 상품 등의 포장을 훼손한 경우<br>
+                                    - 소비자의 주문에 따라 개별적으로 생산되는 상품이 제작에 들어간 경우<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prescription__bottom">
+                    <h3>연관상품</h3>
+                    <div class="productList">
+                        <ul>
+                            {% for item in [1,1,1,1,1,1,1,1,1,1]%}
+                                <li class="productList__item">
+                                    <div class="productList__content">
+                                        <div class="thumbnail">
+                                            <img src="./assets/images/prd-1.png" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <p class="description">상품 설명입니다.</p>
+                                            <div class="flex justify-end">
+                                                <p class="txt">
+                                                20,000<i>원</i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="actions normal">
+                                            <a href="" class="button">
+                                                <span>상세보기</span>
+                                            </a>
+                                            <a href="" class="button">
+                                                <span class="delivery">장바구니</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                {%endfor%}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" style="display:none;">
+        <div class="modal__content type2">
+            <header class="modal__header">
+                <h2 class="modal__title">메세지</h2>
+                <button class="modal__close">닫기</button>
+            </header>
+            <div class="modal__body">
+                <div class="subTit type2">
+                    <h3>
+                            보관함에 조제완료된(발송가능) 수량이 없습니다.<br/>
+                            사전처방을 먼저 등록 해주시면<br/>
+                            그에 따라 조제하여 보관 및 발송 해드립니다.<br/>
+                            사전처방을 등록하시겠습니까?
+                        </h3>
+                </div>
+                <div class="cont">
+                    <div class="action-box flex justify-center mt-8">
+                        <a href="" class="button small mint">확인</a>
+                        <a href="" class="button small">취소</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" style="display:none;">
+        <div class="modal__content type2">
+            <header class="modal__header">
+                <h2 class="modal__title">메세지</h2>
+                <button class="modal__close">닫기</button>
+            </header>
+            <div class="modal__body">
+                <div class="subTit type2">
+                    <h3>
+                        사전처방 등록이 완료 되었습니다.<br/>
+                        사전처방내역에서 확인하세요.
+                    </h3>
+                </div>
+                <div class="cont">
+                    <div class="action-box flex justify-center mt-8">
+                        <a href="" class="button small mint">확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" style="display:none;">
+        <div class="modal__content type2">
+            <header class="modal__header">
+                <h2 class="modal__title">메세지</h2>
+                <button class="modal__close">닫기</button>
+            </header>
+            <div class="modal__body">
+                <div class="subTit type2">
+                    <h3>
+                        사전처방 내역을 삭제하시겠습니까?
+                    </h3>
+                </div>
+                <div class="cont">
+                    <div class="action-box flex justify-center mt-8">
+                        <a href="" class="button small mint">확인</a>
+                        <a href="" class="button small">취소</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

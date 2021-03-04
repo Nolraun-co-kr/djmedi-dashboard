@@ -144,6 +144,18 @@
             }
         }
     }
+    &.type3 {
+        .checkItem {
+            span {
+                border-radius: 0;
+                border:1px solid #e1e1e1
+            }
+            input:checked + span {
+                background: #4eb8a1;
+                border:1px solid #47b59d;
+            }
+        }
+    }
 }
 .checkItem {
     display: flex;
@@ -188,3 +200,58 @@
     }
 }
 
+.datepicker {
+    background: url('../images/ico_calendar.png') no-repeat 10px center !important;
+    padding-left: 3em !important;
+}
+.insurance__form-area {
+    .checkItem {
+        span {
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+    .input, .select {
+        height: 40px !important;
+    }
+    .datepicker-wrap {
+        .input {
+            width: 150px;
+        }
+    }
+    .bar {
+        position: relative;
+        &::after {
+            content: '';
+            width: 1px;
+            height: 25px;
+            background: #e1e1e1;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .select {
+        width: 120px !important;
+        margin-left: 1em;
+    }
+    .search {
+        width: auto;
+    }
+}
+
+.patientcare__form-area {
+    .select {
+        width: 120px !important;
+    }
+    .search {
+        width: 270px;
+        input {
+            height: 100%;
+        }
+        button {
+            width: 45px;
+        }
+    }
+}

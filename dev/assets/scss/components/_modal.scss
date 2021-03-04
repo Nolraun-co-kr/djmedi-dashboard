@@ -56,6 +56,7 @@
             font-size: 14px;
             color: #000;
             font-weight: 500;
+            line-height: 1.5em;
         }
         a {
             font-size: 15px;
@@ -160,5 +161,20 @@
             font-size: 16px;
             text-decoration: underline;
         }
+    }
+}
+.modal--patientcare {
+    .select {
+        height: 45px;
+        
+        &.w-full {
+            width: 100% !important;
+        }
+    }
+    .button {
+        width: 120px;
+    }
+    .input {
+        max-width: 100%;
     }
 }

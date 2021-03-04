@@ -8,13 +8,16 @@ $(document).ready(function(){
 
     $('.tab__navlink').on('click', function(e){
         e.preventDefault();
-        $('.tab__navlink').removeClass('active');
+        const $parents = $(this).parents('.tab');
+        $(this).siblings('.tab__navlink').removeClass('active');
         $(this).addClass('active');
 
-        var value = $(this).data('tablink');
+        var value = $(this).data('tablinkDetail');
+        console.log($(this).data());
+        
 
-        $('.tab__panel').hide();
-        $('.tab__panel').eq(value - 1).show();
+        $parents.find('.tab__panel').hide();
+        $parents.find('.tab__panel').eq(value - 1).show();
 
     });
 
@@ -46,6 +49,10 @@ $(document).ready(function(){
 
       $('.modal__close').on('click', function(){
         $(this).parents('.modal').hide();
+      });
+
+      $('.modal__close').on('click', function(){
+        $(this).parents('.normalBox').hide();
       });
 
 
