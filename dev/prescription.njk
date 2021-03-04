@@ -215,140 +215,222 @@
                                 <header class="table__header">
                                     <h3>방제 검색 / 약제 검색</h3>
                                 </header>
-                                <div class="tabLinks flex items-center">
-                                    <a href="" class="active">이전 처방</a>
-                                    <span class="bar">|</span>
-                                    <a href="">개인 방제</a>
-                                    <span class="bar">|</span>
-                                    <a href="">방제 사전</a>
-                                    <span class="bar">|</span>
-                                    <a href="">약제 검색</a>
-                                </div>
-                                <div class="form-box mb-4">
-                                    <div class="search mb-4">
-                                        <input type="text">
-                                        <button type="submit">검색</button>
+                                <div class="tab-area">
+                                    <div class="tabLinks flex items-center">
+                                        <a href="" class="" data-tablink="1" >이전 처방</a>
+                                        <span class="bar">|</span>
+                                        <a href="" data-tablink="2" >개인 방제</a>
+                                        <span class="bar">|</span>
+                                        <a href="" data-tablink="3" >방제 사전</a>
+                                        <span class="bar">|</span>
+                                        <a href="" class="active" data-tablink="4" >약제 검색</a>
                                     </div>
-                                    <div class="radiobox flex ml-auto initial">
-                                        <label for="ck0" class="checkItem">
-                                            <input type="radio" name="date" id="ck0" hidden="" checked>
-                                            <span>전체</span>
-                                        </label>
-                                        <label for="ck1" class="checkItem">
-                                            <input type="radio" name="date" id="ck1" hidden="">
-                                            <span>ㄱ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㄴ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㄷ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㄹ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㅁ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㅂ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㅅ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㅇ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㅈ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㅊ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㅋ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㅌ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㅍ</span>
-                                        </label>
-                                        <label for="ck2" class="checkItem">
-                                            <input type="radio" name="date" id="ck2" hidden="">
-                                            <span>ㅎ</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="table type2 table--order">
-                                    <table>
-                                        <colgroup>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col width="60">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th>약재명</th>
-                                                <th>원산지</th>
-                                                <th>가격(g)</th>
-                                                <th>적용</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="4" style="text-align:left;">
-                                                    총 검색 건수  <span class="mint">12</span> 건
-                                                </td>
-                                            </tr>
-                                            {% for item in [1,1,1,1,1,1,1,1,1,1]%}
-                                                <tr>
-                                                    <td>약재명</td>
-                                                    <td>중국</td>
-                                                    <td>150원</td>
-                                                    <td>
-                                                        <button>
-                                                            <img src="./assets/images/ico_plus-2.png" alt="">
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                {%endfor%}
-                                            </tbody>
-                                        </table>
+                                    <div class="tabContents">
+                                        <div class="tabItem">1</div>
+                                        <div class="tabItem">2</div>
+                                        <div class="tabItem">3</div>
+                                        <div class="tabItem" style="display:block;">
+                                            <div class="form-box mb-4">
+                                                <div class="search mb-4">
+                                                    <input type="text">
+                                                    <button type="submit">검색</button>
+                                                </div>
+                                                <div class="radiobox flex ml-auto initial">
+                                                    <label for="ck0" class="checkItem">
+                                                        <input type="radio" name="date" id="ck0" hidden="" checked>
+                                                        <span>전체</span>
+                                                    </label>
+                                                    <label for="ck1" class="checkItem">
+                                                        <input type="radio" name="date" id="ck1" hidden="">
+                                                        <span>ㄱ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㄴ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㄷ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㄹ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㅁ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㅂ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㅅ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㅇ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㅈ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㅊ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㅋ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㅌ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㅍ</span>
+                                                    </label>
+                                                    <label for="ck2" class="checkItem">
+                                                        <input type="radio" name="date" id="ck2" hidden="">
+                                                        <span>ㅎ</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="table type2 table--order">
+                                                <table>
+                                                    <colgroup>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col width="60">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>약재명</th>
+                                                            <th>원산지</th>
+                                                            <th>가격(g)</th>
+                                                            <th>적용</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>약재명</td>
+                                                            <td>중국</td>
+                                                            <td>150원</td>
+                                                            <td>
+                                                                <button>
+                                                                    <img src="./assets/images/ico_plus-2.png" alt="">
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>약재명</td>
+                                                            <td>중국</td>
+                                                            <td>150원</td>
+                                                            <td>
+                                                                <button>
+                                                                    <img src="./assets/images/ico_plus-2.png" alt="">
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>약재명</td>
+                                                            <td>중국</td>
+                                                            <td>150원</td>
+                                                            <td>
+                                                                <button>
+                                                                    <img src="./assets/images/ico_plus-2.png" alt="">
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>약재명</td>
+                                                            <td>중국</td>
+                                                            <td>150원</td>
+                                                            <td>
+                                                                <button>
+                                                                    <img src="./assets/images/ico_plus-2.png" alt="">
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>약재명</td>
+                                                            <td>중국</td>
+                                                            <td>150원</td>
+                                                            <td>
+                                                                <button>
+                                                                    <img src="./assets/images/ico_plus-2.png" alt="">
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>약재명</td>
+                                                            <td>중국</td>
+                                                            <td>150원</td>
+                                                            <td>
+                                                                <button>
+                                                                    <img src="./assets/images/ico_plus-2.png" alt="">
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>약재명</td>
+                                                            <td>중국</td>
+                                                            <td>150원</td>
+                                                            <td>
+                                                                <button>
+                                                                    <img src="./assets/images/ico_plus-2.png" alt="">
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>약재명</td>
+                                                            <td>중국</td>
+                                                            <td>150원</td>
+                                                            <td>
+                                                                <button>
+                                                                    <img src="./assets/images/ico_plus-2.png" alt="">
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>약재명</td>
+                                                            <td>중국</td>
+                                                            <td>150원</td>
+                                                            <td>
+                                                                <button>
+                                                                    <img src="./assets/images/ico_plus-2.png" alt="">
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
 
-                                        <div class="pagination small mb-4">
-                                            <a href="" class="arrow arrow-prev">이전</a>
-                                            <a href="" class="active">1</a>
-                                            <a href="" class="">2</a>
-                                            <a href="" class="">3</a>
-                                            <a href="" class="">4</a>
-                                            <a href="" class="">5</a>
-                                            <a href="" class="arrow arrow-next">다음</a>
+                                                <div class="pagination small mb-4">
+                                                    <a href="" class="arrow arrow-prev">이전</a>
+                                                    <a href="" class="active">1</a>
+                                                    <a href="" class="">2</a>
+                                                    <a href="" class="">3</a>
+                                                    <a href="" class="">4</a>
+                                                    <a href="" class="">5</a>
+                                                    <a href="" class="arrow arrow-next">다음</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        {# <div class="action-box flex justify-end bottomBtn">
-                            <a href="" class="button small">처방전 임시저장</a>
-                            <a href="" class="button small mint">다음단계(배송정보입력)</a>
-                        </div> #}
                     </div>
                 </div>
             </div>
         </div>
-    {% endblock %}
+    </div>
+{% endblock %}

@@ -102,6 +102,12 @@
         padding: 0 10px;
         padding-left: 30px;
         background: url('../images/ico_plus.png') no-repeat 10px center #47b59d;
+        &.minus {
+            background: url('../images/ico_minus.png') no-repeat 10px center #fff;
+            border: 1px solid #47b59d;
+            color: #606060;
+            margin-right: 10px;
+        }
     }
     .tabContents {
         .tabItem {

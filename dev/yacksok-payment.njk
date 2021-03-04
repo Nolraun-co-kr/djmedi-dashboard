@@ -183,22 +183,93 @@
                             <div>
                                 <header class="table__header flex items-center justify-between">
                                     <h3>환자 정보</h3>
+                                    <a href="" class="addBtn minus ml-auto">환자삭제</a>
                                     <a href="" class="addBtn">환자추가</a>
                                 </header>
                                 <div class="tab-area">
                                     <div class="tabLinks flex items-center">
-                                        <a href="#//" data-tabLink="1">환자 검색</a>
+                                        <a href="#//" data-tablink="1" class="active">환자 검색</a>
                                         <span class="bar">|</span>
-                                        <a href="#//" class="active" data-tabLink="2">처방 환자</a>
+                                        <a href="#//" class="" data-tablink="2">처방 환자</a>
                                         <span class="bar">|</span>
-                                        <a href="#//" data-tabLink="3">처방 내역</a>
+                                        <a href="#//" data-tablink="3" class="">처방 내역</a>
                                     </div>
                                     <div class="tabContents">
                                         {# 환자 검색 #}
-                                        <div class="tabItem">1</div>
+                                        <div class="tabItem" style="display: block;">
+                                            <div class="search mb-2">
+                                                <input type="text">
+                                                <button type="submit">검색</button>
+                                            </div>
+                                            <div class="table type2 table--order">
+                                                <table>
+                                                    <colgroup>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col width="60">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>차트번호</th>
+                                                            <th>환자명</th>
+                                                            <th>성별/나이</th>
+                                                            <th>비고</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span>건
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20202</td>
+                                                            <td>한의사랑</td>
+                                                            <td>여성 / 22</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20202</td>
+                                                            <td>한의사랑</td>
+                                                            <td>여성 / 22</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20202</td>
+                                                            <td>한의사랑</td>
+                                                            <td>여성 / 22</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20202</td>
+                                                            <td>한의사랑</td>
+                                                            <td>여성 / 22</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20202</td>
+                                                            <td>한의사랑</td>
+                                                            <td>여성 / 22</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <div class="pagination small mb-4">
+                                                    <a href="" class="arrow arrow-prev">이전</a>
+                                                    <a href="" class="active">1</a>
+                                                    <a href="" class="">2</a>
+                                                    <a href="" class="">3</a>
+                                                    <a href="" class="">4</a>
+                                                    <a href="" class="">5</a>
+                                                    <a href="" class="arrow arrow-next">다음</a>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         {# 처방 환자 #}
-                                        <div class="tabItem active" style="display:block;">
+                                        <div class="tabItem active" style="display: none;">
                                             <div class="table">
                                                 <table>
                                                     <colgroup>
@@ -229,10 +300,10 @@
                                                         <tr>
                                                             <th>주소</th>
                                                             <td>
-                                                                123456<br/>
-                                                                경기도 고양시 일산동구 장항동 849<br/>
-                                                                동양메이저타워 1234호
-                                                            </td>
+                                                                    123456<br>
+                                                                    경기도 고양시 일산동구 장항동 849<br>
+                                                                    동양메이저타워 1234호
+                                                                </td>
                                                         </tr>
                                                         <tr>
                                                             <th>비고</th>
@@ -248,7 +319,7 @@
                                         </div>
 
                                         {# 처방 내역 #}
-                                        <div class="tabItem">
+                                        <div class="tabItem" style="display: none;">
                                             <div class="table type2 table--order">
                                                 <table>
                                                     <colgroup>
@@ -270,8 +341,8 @@
                                                     <tbody>
                                                         <tr>
                                                             <td colspan="5" style="text-align:left;">
-                                                            총 검색 건수  <span class="mint">12</span> 건
-                                                        </td>
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>2021.01.23</td>

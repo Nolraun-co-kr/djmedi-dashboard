@@ -31,7 +31,7 @@
 |  | [:link:](https://loving-wing-2390d9.netlify.app/yacksok-payment.html) |
 | sub_약속처방_결제하기 팝업 | [:link:](https://loving-wing-2390d9.netlify.app/yacksok-register.html) |
 | sub_약속처방_배송지 입력 및 결제하기 | [:link:](https://loving-wing-2390d9.netlify.app/yacksok-payment.html) |
-| sub_약속처방_배송지 입력 및 탕전실 접수 | [:link:](https://loving-wing-2390d9.netlify.app/yacksok-resister.html) |
+| sub_약속처방_배송지 입력 및 탕전실 접수 | [:link:](https://loving-wing-2390d9.netlify.app/yacksok-register.html) |
 | sub_약속처방_사전처방 발송요청_내용변경 | [:link:](https://loving-wing-2390d9.netlify.app/yacksok-modify.html) |
 | sub_약속처방 | [:link:](https://loving-wing-2390d9.netlify.app/yacksok.html) |
 | sub_약속처방주문-상세페이지 | [:link:](https://loving-wing-2390d9.netlify.app/yacksokdetail.html) |
