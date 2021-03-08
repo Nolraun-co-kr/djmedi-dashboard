@@ -728,7 +728,7 @@
 
                     <div class="action-box flex justify-end bottomBtn">
                         <a href="" class="button small">처방전 임시저장</a>
-                        <a href="" class="button small mint">다음단계(배송정보입력)</a>
+                        <a href="" class="button small mint">결제하기</a>
                     </div>
                 </div>
             </div>
@@ -874,6 +874,209 @@
                             <a href="" class="">5</a>
                             <a href="" class="arrow arrow-next">다음</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# modal 결제하기 #}
+        <div class="modal">
+            <div class="modal__content">
+                <header class="modal__header">
+                    <h2 class="modal__title">결제하기</h2>
+                    <button class="modal__close">닫기</button>
+                </header>
+                <div class="modal__body pd10">
+                    <div class="subTit flex items-center justify-between">
+                        <h3>선택하신 주문 건의 결제를 진행해주세요.</h3>
+                    </div>
+                    <div class="cont">
+                        <div class="row mb-4">
+                            <div class="table board-table">
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>처방번호</th>
+                                            <th>처방분류</th>
+                                            <th>의뢰처</th>
+                                            <th>처방기관</th>
+                                            <th>급여구분</th>
+                                            <th>처방명</th>
+                                            <th>처방의</th>
+                                            <th>조제금액</th>
+                                            <th>접수일자</th>
+                                            <th>조제상태</th>
+                                            <th>결제상태</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">1234567</td>
+                                            <td class="text-center">처방분류명</td>
+                                            <td class="text-center">의뢰처명</td>
+                                            <td class="text-center">처방기관명</td>
+                                            <td class="text-center">급여구분명</td>
+                                            <td class="text-center">처방명</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-center">26,400원</td>
+                                            <td class="text-center">2021.02.02</td>
+                                            <td  class="text-center mint">조제대기</td>
+                                            <td  class="text-center mint">미결제</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="11">
+                                                <div class="flex jusitfy-between items-center">
+                                                    <p>
+                                                        총 <span class="mint">1</span> 건
+                                                    </p>
+                                                    <div class="pagination small ml-auto" style="margin-top:0;">
+                                                        <a href="" class="arrow arrow-prev">이전</a>
+                                                        <a href="" class="active">1</a>
+                                                        <a href="" class="">2</a>
+                                                        <a href="" class="">3</a>
+                                                        <a href="" class="">4</a>
+                                                        <a href="" class="">5</a>
+                                                        <a href="" class="arrow arrow-next">다음</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="table pdModify">
+                                <table>
+                                    <colgroup>
+                                        <col width="140">
+                                        <col>
+                                        <col width="140">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-left">조제비-할인금액</th>
+                                            <td class="text-right">38,850원 - 0원 = 38,850원</td>
+                                            <th class="text-left">합계금액</th>
+                                            <td class="text-right">38,850원</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="table pdModify">
+                                <table>
+                                    <colgroup>
+                                        <col width="140">
+                                        <col>
+                                        <col width="140">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-left">예치금 차감액</th>
+                                            <td>
+                                                <div class="flex">
+                                                    <div class="input flex items-center h45">
+                                                        <input type="text" class="text-right mint" placeholder="1,000">
+                                                        <span class="pr-3">원</span>
+                                                    </div>
+                                                    <button class="button small ml-2">전체 금액사용</button>
+                                                </div>
+                                            </td>
+                                            <th class="text-left">예치금 잔액</th>
+                                            <td class="text-right">38,850원</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-left">적립금 차감액</th>
+                                            <td>
+                                                <div class="flex">
+                                                    <div class="input flex items-center h45">
+                                                        <input type="text" class="text-right mint" placeholder="1,000">
+                                                        <span class="pr-3">원</span>
+                                                    </div>
+                                                    <button class="button small ml-2">전체 금액사용</button>
+                                                </div>
+                                            </td>
+                                            <th class="text-left">적립금 잔액</th>
+                                            <td class="text-right">38,850원</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-left">결제 예정금액<span class="mint">*</span></th>
+                                            <td colspan="3">
+                                                <div class="" style="width:233px;">
+                                                    <div class="input flex items-center h45">
+                                                        <input type="text" class="text-right mint" placeholder="1,000">
+                                                        <span class="pr-3">원</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-left">결제방식<span class="mint">*</span></th>
+                                            <td>
+                                                <div class="radiobox flex ml-auto type2">
+                                                    <label for="ckd1" class="checkItem">
+                                                        <input type="radio" name="date1" id="ckd1" hidden="" checked>
+                                                        <span></span>선불결제
+                                                    </label>
+                                                    <label for="ckd2" class="checkItem">
+                                                        <input type="radio" name="date1" id="ckd2" hidden="">
+                                                        <span></span>후불결제
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <th class="text-left">결제수단 선택<span class="mint">*</span></th>
+                                            <td>
+                                                <div class="radiobox flex ml-auto type2">
+                                                    <label for="ckd3" class="checkItem">
+                                                        <input type="radio" name="date2" id="ckd3" hidden="" checked>
+                                                        <span></span>신용카드
+                                                    </label>
+                                                    <label for="ckd4" class="checkItem">
+                                                        <input type="radio" name="date2" id="ckd4" hidden="">
+                                                        <span></span>계좌이체
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="paymentTxt px-4">
+                            <div class="row mb-4">
+                                한의사랑 통합사이트는 ‘전자상거래 시 ActiveX 없는 환경 구현’ 정책에 부응하고, 보다 편리하고 안전한 결제방식 제공을 위해<br/>
+                                Non-ActiveX 결제 환경을 제공하여 PC(브라우저 호환) 및 모바일 (안드로이드, IOS계열) 결제가 가능합니다.<br/>
+                                <a href="">신용카드(체크카드 포함) 결제 실패 시 조치방법 가이드</a>
+                            </div>
+                            <div class="row">
+                                최신 윈도우 업데이트 내용이 적용되지 않은 일부 PC에서는 카드대행사와 인증업체간의 통신에 사용되는<br/>
+                                신규 인증서 (Root CA 인증서)가 미설치 되어 카드 결제 모듈이 실행되지 않는 문제가 발생할 수 있습니다.<br/>
+                                <a href="">카드 결제 화면(모듈)이 실행되지 않을 때 해결방법 안내 바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action-box flex items-center">
+                        <span>* 결제가 완료되지 않으면 탕전실에 처방전이 접수되지 않아 조제가 시작되지 않습니다.</span>
+                        <a href="" class="button small ml-auto">결제보류</a>
+                        <a href="" class="button small mint">결제하기</a>
                     </div>
                 </div>
             </div>

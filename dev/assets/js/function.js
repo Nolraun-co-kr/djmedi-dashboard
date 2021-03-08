@@ -68,4 +68,17 @@ $(document).ready(function(){
       $parents.find('.tabItem').hide();
       $parents.find('.tabItem').eq(value - 1).show();
   });
-  });
+
+  $('.nav__depth1').on('mouseenter', function(){
+    $(this).find('.nav__depth2').stop().slideDown();
+  })
+
+  $('.nav__depth1').on('mouseleave', function(){
+    $(this).find('.nav__depth2').stop().slideUp();
+  })
+
+});
+
+function addSelectBtn() {
+  $('.addSelect').show();
+}
