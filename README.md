@@ -103,11 +103,8 @@
 | sub_아이디비밀번호찾기_추가페이지07 | [:link:](https://loving-wing-2390d9.netlify.app/find_07.html) |
 | sub_아이디비밀번호찾기_추가페이지08 | [:link:](https://loving-wing-2390d9.netlify.app/find_08.html) |
 | sub_아이디비밀번호찾기_추가페이지09 | [:link:](https://loving-wing-2390d9.netlify.app/find_09.html) |
-
 | sub_처방하기_추가페이지01 | [:link:](https://loving-wing-2390d9.netlify.app/shipping_add-01.html) |
 | sub_처방하기_추가페이지02 | [:link:](https://loving-wing-2390d9.netlify.app/shipping_add-01.html) |
-
-
 | 마이페이지_주문내역 | [:link:](https://loving-wing-2390d9.netlify.app/orderlist_add.html) |
 
 
