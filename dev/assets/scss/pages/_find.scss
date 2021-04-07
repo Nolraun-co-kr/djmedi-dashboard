@@ -1,0 +1,139 @@
+.find__lisks {
+  a {
+    font-size: 22px;
+    color: #000;
+    width: 50%;
+    line-height: 50px;
+    border-bottom: 1px solid #47b59d;
+    font-weight: 600;
+    @apply text-center;
+    &.active {
+      border: 1px solid #47b59d;
+      border-bottom: 1px solid #e1e1e1;
+    }
+  }
+}
+.find {
+  .form__row {
+    padding: 90px 0;
+    border-bottom: 1px solid #e1e1e1;
+    .inner {
+      max-width:635px;
+      margin: 0 auto;
+    }
+  }
+  .radiobox {
+    margin-bottom: 40px;
+    .txtbox {
+      h3 {
+        font-size: 20px;
+        color: #000;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+        color: #606060;
+      }
+    }
+  }
+  .row {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .col {
+      @apply flex items-center;
+    }
+  }
+  .input {
+    width: 448px;
+    height:58px;
+    border: 2px solid #e1e1e1;
+    @apply flex-none;
+    input {
+      font-size: 20px;
+      color: #000;
+      &::placeholder {
+        font-size: 20px;
+        color: #c2c2c2;
+      }
+    }
+  }
+  .btn {
+    @apply flex-1;
+    border-radius: 5px;
+    &.mint {
+      border: none;
+      background:#47b59d;
+      color: #fff;
+    }
+  }
+
+  .correct-message {
+    font-size: 16px;
+    color: #606060;
+    padding-left: 20px;
+    margin-top: 5px;
+    &.incorrect {
+      color: #d92d8a;
+    }
+    span {
+      color: #606060 !important;
+    }
+  }
+
+  .find__result {
+    margin: 200px 0;
+    padding: 40px 0;
+    background: #fafafa;
+    @apply border-t border-b;
+    border-color:#e1e1e1;
+    &.type2 {
+      margin-bottom: 0px;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    p {
+      font-size: 18px;
+      color: #606060;
+      line-height: 33px;
+      margin-bottom: 48px;
+      span {
+        color: #47b59d;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    .btn {
+      display: inline-block;
+      width: 450px;
+      line-height: 65px;
+      font-size: 20px;
+      border-radius: 0;
+    }
+  }
+
+  .form__row {
+    &.type2{
+      .inner {
+        max-width: 450px;
+      }
+      .input {
+        margin-bottom: 15px;
+        width: 100%;
+      }
+      .btn {
+        margin-top: 60px;
+        @apply inline-block;
+        width: 100%;
+        line-height: 65px;
+        height: 65px;
+        margin-left: 0;
+        border-radius: 0;
+        text-align: center;
+      }
+    }
+  }
+}

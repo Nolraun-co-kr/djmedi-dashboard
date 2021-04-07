@@ -91,6 +91,27 @@
 | sub고객센터_자주묻는질문 | [:link:](https://loving-wing-2390d9.netlify.app/faq.html) |
 | sub고객센터_자주묻는질문2 | [:link:](https://loving-wing-2390d9.netlify.app/faqdetail.html) |
 
+## 추가페이지
+| 페이지 명 |  링크 |
+|--------|--------:|
+| sub_아이디비밀번호찾기_추가페이지01 | [:link:](https://loving-wing-2390d9.netlify.app/find_01.html) |
+| sub_아이디비밀번호찾기_추가페이지02 | [:link:](https://loving-wing-2390d9.netlify.app/find_02.html) |
+| sub_아이디비밀번호찾기_추가페이지03 | [:link:](https://loving-wing-2390d9.netlify.app/find_03.html) |
+| sub_아이디비밀번호찾기_추가페이지04 | [:link:](https://loving-wing-2390d9.netlify.app/find_04.html) |
+| sub_아이디비밀번호찾기_추가페이지05 | [:link:](https://loving-wing-2390d9.netlify.app/find_05.html) |
+| sub_아이디비밀번호찾기_추가페이지06 | [:link:](https://loving-wing-2390d9.netlify.app/find_06.html) |
+| sub_아이디비밀번호찾기_추가페이지07 | [:link:](https://loving-wing-2390d9.netlify.app/find_07.html) |
+| sub_아이디비밀번호찾기_추가페이지08 | [:link:](https://loving-wing-2390d9.netlify.app/find_08.html) |
+| sub_아이디비밀번호찾기_추가페이지09 | [:link:](https://loving-wing-2390d9.netlify.app/find_09.html) |
+
+| sub_처방하기_추가페이지01 | [:link:](https://loving-wing-2390d9.netlify.app/shipping_add-01.html) |
+| sub_처방하기_추가페이지02 | [:link:](https://loving-wing-2390d9.netlify.app/shipping_add-01.html) |
+
+
+| 마이페이지_주문내역 | [:link:](https://loving-wing-2390d9.netlify.app/orderlist_add.html) |
+
+
+
 
 ## 수정
 
@@ -106,4 +127,3 @@
 10. “마이페이지 > 주문내역” 기획에 있는 검색 부분이 없습니다. -> 디자인 필요
 11. “마이페이지 > 처방옵션” 파일등록 버튼에 나오는 레이어 누락 -> 디자인 필요
 
-1

@@ -1,0 +1,83 @@
+{% extends 'layout/base.njk' %}
+{% block content %}
+  <div class="container">
+    <div class="accounts">
+      <div class="wrap">
+        <div class="section__title text-center">
+          <h2>아이디 / 비밀번호 찾기</h2>
+          <div class="desc">
+            <p>
+                한의사랑 가입계정 정보를 입력 해주세요.
+            </p>
+          </div>
+        </div>
+
+        <div class="find">
+          <div class="find__lisks flex items-center">
+            <a href="" class="active">아이디 찾기</a>
+            <a href="" class="">비밀번호 찾기</a>
+          </div>
+          <div class="form">
+            <form action="">
+              <div class="form__row">
+                <div class="inner">
+                  <div class="radiobox flex type2">
+                    <label for="ckd1" class="checkItem">
+                      <input type="radio" name="date1" id="ckd1" hidden="">
+                      <span></span>
+                      <div class="txtbox">
+                        <h3>등록된 휴대폰 번호로 찾기</h3>
+                        <p>가입 시 등록된 휴대폰 정보로 아이디를 찾을 수 있습니다.</p>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="input-box">
+                    <div class="row">
+                      <div class="col">
+                        <div class="input" style="">
+                          <input type="text" placeholder="이름">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="input" style="">
+                          <input type="text" placeholder="휴대폰 번호 ( - 없이 입력)">
+                        </div>
+                        <button class="btn" type="">재발송</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="inner">
+                  <div class="radiobox flex type2">
+                    <label for="ckd2" class="checkItem">
+                      <input type="radio" name="date1" id="ckd2" checked>
+                      <span></span>
+                      <div class="txtbox">
+                        <h3>가입 시 등록된 이메일 정보로 찾기</h3>
+                        <p>가입 시 등록된 이메일 정보로 아이디를 찾을 수 있습니다.</p>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="input-box">
+                    <div class="row">
+                      <div class="col">
+                        <div class="input" style="">
+                          <input type="text" placeholder="이메일">
+                        </div>
+                        <button class="btn mint" type="">발송</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

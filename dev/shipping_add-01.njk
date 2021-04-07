@@ -1,0 +1,2706 @@
+{% extends 'layout/base.njk' %}
+{% block content %}
+  <div class="container">
+    <div class="sub cart order">
+      <div class="wrap">
+        <div class="breadcrumb">
+          <span class="">Home</span>
+          <span class="">안심탕제실</span>
+          <span class="active">처방하기</span>
+        </div>
+        <div class="mb-16">
+          <div class="section__title text-center">
+            <h2>처방하기</h2>
+            <div class="desc">
+              <p>
+                                처방하기 도움말
+                            </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="order__content">
+          <div class="row flex">
+            <div class="col mr-8 flex-1">
+              <div class="table">
+                <header class="table__header">
+                  <h3>처방 요약</h3>
+                </header>
+                <table>
+                  <colgroup>
+                    <col width="125">
+                    <col>
+                    <col width="125">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>처방분류</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">탕전처방</option>
+                          </select>
+                        </div>
+                      </td>
+                      <th>처방일자</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>처방기관</th>
+                      <td>한의사랑 안심탕제실</td>
+                      <th>처방의</th>
+                      <td>홍길동</td>
+                    </tr>
+                    <tr>
+                      <th>의뢰처</th>
+                      <td colspan="3">가나한의원</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="table mt-8">
+                <header class="table__header flex items-center justify-between">
+                  <h3>환자 요약</h3>
+                  <span>환자 탭에서 환자를 선택 또는 환자가 없을 경우 “환자추가” 버튼을 눌러주세요.</span>
+                </header>
+                <table>
+                  <colgroup>
+                    <col width="125">
+                    <col>
+                    <col width="125">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>환자명</th>
+                      <td colspan="3">
+                        <div class="input">
+                          <input type="text" placeholder="한의사랑" disabled>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>처방메모</th>
+                      <td colspan="3">
+                        <div class="textarea" style="height:100px;">
+                          <textarea name="" id="" placeholder="환자 특이사항이나 기타사항을 작성 해주세요. (처방메모는 탕전실에 전달되지 않습니다.)"></textarea>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="table mt-8">
+                <header class="table__header flex items-center">
+                  <h3>처방전</h3>
+                  <a href="" class="button small ml-auto" style="width:auto;padding:0 1.5em;font-size:14px;border-radius:1.5em;line-height:30px;height:30px;">초기화</a>
+                </header>
+                <table>
+                  <colgroup>
+                    <col width="125">
+                    <col>
+                    <col width="125">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>처방명</th>
+                      <td colspan="3">
+                        <div class="input">
+                          <input type="text" placeholder="방제집 사용 시 자동 입력됩니다." disabled>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>빠른 약재검색</th>
+                      <td colspan="3">
+                        <div class="input-box flex">
+                          <div class="input">
+                            <input type="text" placeholder="" disabled>
+                          </div>
+                          <div class="input">
+                            <input type="text" placeholder="" disabled>
+                          </div>
+                          <div class="input">
+                            <input type="text" placeholder="" disabled>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="table mt-8 type2 bnNone">
+                <table>
+                  <colgroup>
+                    <col width="50">
+                    <col>
+                    <col width="200">
+                    <col>
+                    <col>
+                    <col>
+                    <col width="60">
+                  </colgroup>
+                  <thead>
+                    <th>No.</th>
+                    <th>약재명</th>
+                    <th>원산지</th>
+                    <th>첩량</th>
+                    <th>약재량</th>
+                    <th>약재비</th>
+                    <th>삭제</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>
+                        <a href=""><img src="./assets/images/ico_del.png" alt="" class="m-auto"></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="table mt-8">
+                <header class="table__header">
+                  <h3>추가 법제</h3>
+                </header>
+                <table>
+                  <colgroup>
+                    <col width="125">
+                    <col>
+                    <col width="125">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>첩수</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">0.0 x 20첩</option>
+                          </select>
+                        </div>
+                      </td>
+                      <th>총 약재량</th>
+                      <td>
+                        <div class="input">
+                          <input type="text" placeholder="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>탕전법</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">표준</option>
+                          </select>
+                        </div>
+                      </td>
+                      <th>탕전방식</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">무압</option>
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>팩수</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">30팩</option>
+                          </select>
+                        </div>
+                      </td>
+                      <th>팩용량</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">선택</option>
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>녹용틴트앰플</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">없음</option>
+                          </select>
+                        </div>
+                      </td>
+                      <th>자하거앰플</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">없음</option>
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>당도추가</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">없음</option>
+                          </select>
+                        </div>
+                      </td>
+                      <th>당도선택</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">올리고당</option>
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>향기추가</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">없음</option>
+                          </select>
+                        </div>
+                      </td>
+                      <th>향기선택</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">초코향</option>
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>품질보증서</th>
+                      <td colspan="3">
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">무</option>
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="table mt-8">
+                <header class="table__header">
+                  <h3>기타설정</h3>
+                </header>
+                <table>
+                  <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>박스</th>
+                      <th>
+                        <div class="inner flex items-center">
+                                                    파우치
+                                                    <div class="radiobox flex ml-auto">
+                            <label for="s1" class="checkItem">
+                              <input type="radio" name="szz" id="s1" hidden="" checked>
+                              <span>스탠딩</span>
+                            </label>
+                            <label for="s12" class="checkItem">
+                              <input type="radio" name="szz" id="s12" hidden="">
+                              <span>스파우트</span>
+                            </label>
+                          </div>
+                        </div>
+                      </th>
+                      <th>포장</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="img-area"><img src="./assets/images/prd-1.png" alt=""></div>
+                      </td>
+                      <td>
+                        <div class="img-area"><img src="./assets/images/prd-1.png" alt=""></div>
+                      </td>
+                      <td>
+                        <div class="img-area"><img src="./assets/images/prd-1.png" alt=""></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">박스명</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">파우치명</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">포장명</option>
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="table mt-8">
+                <table>
+                  <colgroup>
+                    <col width="125">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>마킹</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">마킹 없음</option>
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center">
+                                                조제지시
+                                            </th>
+                      <td>
+                        <div class="textarea" style="height:60px;">
+                          <textarea name="" id="" placeholder="조제지시 사항을 작성하여 주세요. (200자 이내)"></textarea>
+                        </div>
+                        <a href="" class="mint underline text-right flex justify-end mt-2">불러오기</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center">
+                                                복용지시
+                                            </th>
+                      <td>
+                        <div class="textarea" style="height:120px;">
+                          <textarea name="" id="" placeholder="편집기를 이용하여 복용법을 작성하여 주십시요.인쇄가 필요한 복용법은 iamashop@daum.net으로 메일 발송 후 메일 제목을 남겨주세요."></textarea>
+                        </div>
+                        <div class="action-box flex justify-end mt-2">
+                          <a href="" class="mint underline mr-4">편집기</a>
+                          <a href="" class="mint underline">파일첨부</a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="table mt-8">
+                <header class="table__header">
+                  <h3>배송 설정</h3>
+                </header>
+                <table>
+                  <colgroup>
+                    <col width="125">
+                    <col>
+                    <col width="125">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>배송방법</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">택배</option>
+                          </select>
+                        </div>
+                      </td>
+                      <th>배송비</th>
+                      <td>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">주문 시 결제</option>
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="col right">
+              <div class="mb-8">
+                <header class="table__header flex items-center">
+                  <h3>환자 정보</h3>
+                  <a href="" class="addBtn minus ml-auto">환자삭제</a>
+                  <a href="" class="addBtn">환자추가</a>
+                </header>
+                <div class="tab-area">
+                  <div class="tabLinks flex items-center">
+                    <a href="#//" data-tablink="1" class="active">환자 검색</a>
+                    <span class="bar">|</span>
+                    <a href="#//" class="" data-tablink="2">처방 환자</a>
+                    <span class="bar">|</span>
+                    <a href="#//" data-tablink="3" class="">처방 내역</a>
+                  </div>
+                  <div class="tabContents">
+                    {# 환자 검색 #}
+                    <div class="tabItem" style="display: block;">
+                      <div class="search mb-2">
+                        <input type="text">
+                        <button type="submit">검색</button>
+                      </div>
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>차트번호</th>
+                              <th>환자명</th>
+                              <th>성별/나이</th>
+                              <th>비고</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span>건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>20202</td>
+                              <td>한의사랑</td>
+                              <td>여성 / 22</td>
+                              <td>-</td>
+                            </tr>
+                            <tr>
+                              <td>20202</td>
+                              <td>한의사랑</td>
+                              <td>여성 / 22</td>
+                              <td>-</td>
+                            </tr>
+                            <tr>
+                              <td>20202</td>
+                              <td>한의사랑</td>
+                              <td>여성 / 22</td>
+                              <td>-</td>
+                            </tr>
+                            <tr>
+                              <td>20202</td>
+                              <td>한의사랑</td>
+                              <td>여성 / 22</td>
+                              <td>-</td>
+                            </tr>
+                            <tr>
+                              <td>20202</td>
+                              <td>한의사랑</td>
+                              <td>여성 / 22</td>
+                              <td>-</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    {# 처방 환자 #}
+                    <div class="tabItem active" style="display: none;">
+                      <div class="table">
+                        <table>
+                          <colgroup>
+                            <col width="125">
+                            <col>
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th>차트번호</th>
+                              <td>1234567</td>
+                            </tr>
+                            <tr>
+                              <th>환자명</th>
+                              <td>한의사랑</td>
+                            </tr>
+                            <tr>
+                              <th>성별/나이</th>
+                              <td>여성 / 22</td>
+                            </tr>
+                            <tr>
+                              <th>전화번호</th>
+                              <td>021234567</td>
+                            </tr>
+                            <tr>
+                              <th>휴대폰번호</th>
+                              <td>01012345678</td>
+                            </tr>
+                            <tr>
+                              <th>주소</th>
+                              <td>
+                                                                    123456<br>
+                                                                    경기도 고양시 일산동구 장항동 849<br>
+                                                                    동양메이저타워 1234호
+                                                                </td>
+                            </tr>
+                            <tr>
+                              <th>비고</th>
+                              <td>-</td>
+                            </tr>
+                            <tr>
+                              <th>최근처방</th>
+                              <td>-</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    {# 처방 내역 #}
+                    <div class="tabItem" style="display: none;">
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>처방일</th>
+                              <th>구분</th>
+                              <th>처방명</th>
+                              <th>처방의</th>
+                              <th>적용</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="5" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>2021.01.23</td>
+                              <td>구분값</td>
+                              <td>처방명</td>
+                              <td>홍길동</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2021.01.23</td>
+                              <td>구분값</td>
+                              <td>처방명</td>
+                              <td>홍길동</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2021.01.23</td>
+                              <td>구분값</td>
+                              <td>처방명</td>
+                              <td>홍길동</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2021.01.23</td>
+                              <td>구분값</td>
+                              <td>처방명</td>
+                              <td>홍길동</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2021.01.23</td>
+                              <td>구분값</td>
+                              <td>처방명</td>
+                              <td>홍길동</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2021.01.23</td>
+                              <td>구분값</td>
+                              <td>처방명</td>
+                              <td>홍길동</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-8">
+                <header class="table__header">
+                  <h3>방제 검색 / 약제 검색</h3>
+                </header>
+                <div class="tab-area">
+                  <div class="tabLinks flex items-center">
+                    <a href="" class="active" data-tablink="1" >이전 처방</a>
+                    <span class="bar">|</span>
+                    <a href="" data-tablink="2" >개인 방제</a>
+                    <span class="bar">|</span>
+                    <a href="" data-tablink="3" >방제 사전</a>
+                    <span class="bar">|</span>
+                    <a href="" class="" data-tablink="4" >약제 검색</a>
+                  </div>
+                  <div class="tabContents">
+                    <div class="tabItem" style="display:block;">
+                      <div class="form-box mb-4">
+                        <div class="search mb-4">
+                          <input type="text">
+                          <button type="submit">검색</button>
+                        </div>
+                        <div class="radiobox flex ml-auto initial">
+                          <label for="ck0" class="checkItem">
+                            <input type="radio" name="date" id="ck0" hidden="" checked>
+                            <span>전체</span>
+                          </label>
+                          <label for="ck1" class="checkItem">
+                            <input type="radio" name="date" id="ck1" hidden="">
+                            <span>ㄱ</span>
+                          </label>
+                          <label for="ck2" class="checkItem">
+                            <input type="radio" name="date" id="ck2" hidden="">
+                            <span>ㄴ</span>
+                          </label>
+                          <label for="ck3" class="checkItem">
+                            <input type="radio" name="date" id="ck3" hidden="">
+                            <span>ㄷ</span>
+                          </label>
+                          <label for="ck4" class="checkItem">
+                            <input type="radio" name="date" id="ck4" hidden="">
+                            <span>ㄹ</span>
+                          </label>
+                          <label for="ck5" class="checkItem">
+                            <input type="radio" name="date" id="ck5" hidden="">
+                            <span>ㅁ</span>
+                          </label>
+                          <label for="ck6" class="checkItem">
+                            <input type="radio" name="date" id="ck6" hidden="">
+                            <span>ㅂ</span>
+                          </label>
+                          <label for="ck7" class="checkItem">
+                            <input type="radio" name="date" id="ck7" hidden="">
+                            <span>ㅅ</span>
+                          </label>
+                          <label for="ck8" class="checkItem">
+                            <input type="radio" name="date" id="ck8" hidden="">
+                            <span>ㅇ</span>
+                          </label>
+                          <label for="ck9" class="checkItem">
+                            <input type="radio" name="date" id="ck9" hidden="">
+                            <span>ㅈ</span>
+                          </label>
+                          <label for="ck10" class="checkItem">
+                            <input type="radio" name="date" id="ck10" hidden="">
+                            <span>ㅊ</span>
+                          </label>
+                          <label for="ck11" class="checkItem">
+                            <input type="radio" name="date" id="ck11" hidden="">
+                            <span>ㅋ</span>
+                          </label>
+                          <label for="ck12" class="checkItem">
+                            <input type="radio" name="date" id="ck12" hidden="">
+                            <span>ㅌ</span>
+                          </label>
+                          <label for="ck13" class="checkItem">
+                            <input type="radio" name="date" id="ck13" hidden="">
+                            <span>ㅍ</span>
+                          </label>
+                          <label for="ck14" class="checkItem">
+                            <input type="radio" name="date" id="ck14" hidden="">
+                            <span>ㅎ</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>약재명</th>
+                              <th>원산지</th>
+                              <th>가격(g)</th>
+                              <th>적용</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabItem">
+                      <div class="form-box mb-4">
+                        <div class="search mb-4">
+                          <input type="text">
+                          <button type="submit">검색</button>
+                        </div>
+                        <div class="radiobox flex ml-auto initial">
+                          <label for="cka0" class="checkItem">
+                            <input type="radio" name="date1" id="cka0" hidden="" checked>
+                            <span>전체</span>
+                          </label>
+                          <label for="cka1" class="checkItem">
+                            <input type="radio" name="date1" id="cka1" hidden="">
+                            <span>ㄱ</span>
+                          </label>
+                          <label for="cka2" class="checkItem">
+                            <input type="radio" name="date1" id="cka2" hidden="">
+                            <span>ㄴ</span>
+                          </label>
+                          <label for="cka3" class="checkItem">
+                            <input type="radio" name="date1" id="cka3" hidden="">
+                            <span>ㄷ</span>
+                          </label>
+                          <label for="cka4" class="checkItem">
+                            <input type="radio" name="date1" id="cka4" hidden="">
+                            <span>ㄹ</span>
+                          </label>
+                          <label for="cka5" class="checkItem">
+                            <input type="radio" name="date1" id="cka5" hidden="">
+                            <span>ㅁ</span>
+                          </label>
+                          <label for="cka6" class="checkItem">
+                            <input type="radio" name="date1" id="cka6" hidden="">
+                            <span>ㅂ</span>
+                          </label>
+                          <label for="cka7" class="checkItem">
+                            <input type="radio" name="date1" id="cka7" hidden="">
+                            <span>ㅅ</span>
+                          </label>
+                          <label for="cka8" class="checkItem">
+                            <input type="radio" name="date1" id="cka8" hidden="">
+                            <span>ㅇ</span>
+                          </label>
+                          <label for="cka9" class="checkItem">
+                            <input type="radio" name="date1" id="cka9" hidden="">
+                            <span>ㅈ</span>
+                          </label>
+                          <label for="cka10" class="checkItem">
+                            <input type="radio" name="date1" id="cka10" hidden="">
+                            <span>ㅊ</span>
+                          </label>
+                          <label for="cka11" class="checkItem">
+                            <input type="radio" name="date1" id="cka11" hidden="">
+                            <span>ㅋ</span>
+                          </label>
+                          <label for="cka12" class="checkItem">
+                            <input type="radio" name="date1" id="cka12" hidden="">
+                            <span>ㅌ</span>
+                          </label>
+                          <label for="cka13" class="checkItem">
+                            <input type="radio" name="date1" id="cka13" hidden="">
+                            <span>ㅍ</span>
+                          </label>
+                          <label for="cka14" class="checkItem">
+                            <input type="radio" name="date1" id="cka14" hidden="">
+                            <span>ㅎ</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>약재명</th>
+                              <th>원산지</th>
+                              <th>가격(g)</th>
+                              <th>적용</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabItem">
+                      <div class="form-box mb-4">
+                        <div class="search mb-4">
+                          <input type="text">
+                          <button type="submit">검색</button>
+                        </div>
+                        <div class="radiobox flex ml-auto initial">
+                          <label for="ckb0" class="checkItem">
+                            <input type="radio" name="date2" id="ckb0" hidden="" checked>
+                            <span>전체</span>
+                          </label>
+                          <label for="ckb1" class="checkItem">
+                            <input type="radio" name="date2" id="ckb1" hidden="">
+                            <span>ㄱ</span>
+                          </label>
+                          <label for="ckb2" class="checkItem">
+                            <input type="radio" name="date2" id="ckb2" hidden="">
+                            <span>ㄴ</span>
+                          </label>
+                          <label for="ckb3" class="checkItem">
+                            <input type="radio" name="date2" id="ckb3" hidden="">
+                            <span>ㄷ</span>
+                          </label>
+                          <label for="ckb4" class="checkItem">
+                            <input type="radio" name="date2" id="ckb4" hidden="">
+                            <span>ㄹ</span>
+                          </label>
+                          <label for="ckb5" class="checkItem">
+                            <input type="radio" name="date2" id="ckb5" hidden="">
+                            <span>ㅁ</span>
+                          </label>
+                          <label for="ckb6" class="checkItem">
+                            <input type="radio" name="date2" id="ckb6" hidden="">
+                            <span>ㅂ</span>
+                          </label>
+                          <label for="ckb7" class="checkItem">
+                            <input type="radio" name="date2" id="ckb7" hidden="">
+                            <span>ㅅ</span>
+                          </label>
+                          <label for="ckb8" class="checkItem">
+                            <input type="radio" name="date2" id="ckb8" hidden="">
+                            <span>ㅇ</span>
+                          </label>
+                          <label for="ckb9" class="checkItem">
+                            <input type="radio" name="date2" id="ckb9" hidden="">
+                            <span>ㅈ</span>
+                          </label>
+                          <label for="ckb10" class="checkItem">
+                            <input type="radio" name="date2" id="ckb10" hidden="">
+                            <span>ㅊ</span>
+                          </label>
+                          <label for="ckb11" class="checkItem">
+                            <input type="radio" name="date2" id="ckb11" hidden="">
+                            <span>ㅋ</span>
+                          </label>
+                          <label for="ckb12" class="checkItem">
+                            <input type="radio" name="date2" id="ckb12" hidden="">
+                            <span>ㅌ</span>
+                          </label>
+                          <label for="ckb13" class="checkItem">
+                            <input type="radio" name="date2" id="ckb13" hidden="">
+                            <span>ㅍ</span>
+                          </label>
+                          <label for="ckb14" class="checkItem">
+                            <input type="radio" name="date2" id="ckb14" hidden="">
+                            <span>ㅎ</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>약재명</th>
+                              <th>원산지</th>
+                              <th>가격(g)</th>
+                              <th>적용</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabItem">
+                      <div class="form-box mb-4">
+                        <div class="search mb-4">
+                          <input type="text">
+                          <button type="submit">검색</button>
+                        </div>
+                        <div class="radiobox flex ml-auto initial">
+                          <label for="ckc0" class="checkItem">
+                            <input type="radio" name="date3" id="ckc0" hidden="" checked>
+                            <span>전체</span>
+                          </label>
+                          <label for="ckc1" class="checkItem">
+                            <input type="radio" name="date3" id="ckc1" hidden="">
+                            <span>ㄱ</span>
+                          </label>
+                          <label for="ckc2" class="checkItem">
+                            <input type="radio" name="date3" id="ckc2" hidden="">
+                            <span>ㄴ</span>
+                          </label>
+                          <label for="ckc3" class="checkItem">
+                            <input type="radio" name="date3" id="ckc3" hidden="">
+                            <span>ㄷ</span>
+                          </label>
+                          <label for="ckc4" class="checkItem">
+                            <input type="radio" name="date3" id="ckc4" hidden="">
+                            <span>ㄹ</span>
+                          </label>
+                          <label for="ckc5" class="checkItem">
+                            <input type="radio" name="date3" id="ckc5" hidden="">
+                            <span>ㅁ</span>
+                          </label>
+                          <label for="ckc6" class="checkItem">
+                            <input type="radio" name="date3" id="ckc6" hidden="">
+                            <span>ㅂ</span>
+                          </label>
+                          <label for="ckc7" class="checkItem">
+                            <input type="radio" name="date3" id="ckc7" hidden="">
+                            <span>ㅅ</span>
+                          </label>
+                          <label for="ckc8" class="checkItem">
+                            <input type="radio" name="date3" id="ckc8" hidden="">
+                            <span>ㅇ</span>
+                          </label>
+                          <label for="ckc9" class="checkItem">
+                            <input type="radio" name="date3" id="ckc9" hidden="">
+                            <span>ㅈ</span>
+                          </label>
+                          <label for="ckc10" class="checkItem">
+                            <input type="radio" name="date3" id="ckc10" hidden="">
+                            <span>ㅊ</span>
+                          </label>
+                          <label for="ckc11" class="checkItem">
+                            <input type="radio" name="date3" id="ckc11" hidden="">
+                            <span>ㅋ</span>
+                          </label>
+                          <label for="ckc12" class="checkItem">
+                            <input type="radio" name="date3" id="ckc12" hidden="">
+                            <span>ㅌ</span>
+                          </label>
+                          <label for="ckc13" class="checkItem">
+                            <input type="radio" name="date3" id="ckc13" hidden="">
+                            <span>ㅍ</span>
+                          </label>
+                          <label for="ckc14" class="checkItem">
+                            <input type="radio" name="date3" id="ckc14" hidden="">
+                            <span>ㅎ</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>약재명</th>
+                              <th>원산지</th>
+                              <th>가격(g)</th>
+                              <th>적용</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-8 mt-16">
+                <div class="tab-area">
+                  <div class="tabLinks flex items-center type2">
+                    <a href="" class="active" data-tablink="1" >상반</a>
+                    <a href="" data-tablink="2" >상외</a>
+                    <a href="" data-tablink="3" >이물질</a>
+                    <a href="" class="" data-tablink="4" >변질</a>
+                    <a href="" class="" data-tablink="5" >독성</a>
+                    <a href="" class="" data-tablink="6" >유효성분</a>
+                    <a href="" class="" data-tablink="7" >도핑</a>
+                  </div>
+                  <div class="tabContents">
+                    <div class="tabItem" style="display:block;">
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>약재명</th>
+                              <th>원산지</th>
+                              <th>가격(g)</th>
+                              <th>적용</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabItem" style="display:block;">
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>약재명</th>
+                              <th>원산지</th>
+                              <th>가격(g)</th>
+                              <th>적용</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabItem" style="display:block;">
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>약재명</th>
+                              <th>원산지</th>
+                              <th>가격(g)</th>
+                              <th>적용</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabItem" style="display:block;">
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>약재명</th>
+                              <th>원산지</th>
+                              <th>가격(g)</th>
+                              <th>적용</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabItem" style="display:block;">
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>약재명</th>
+                              <th>원산지</th>
+                              <th>가격(g)</th>
+                              <th>적용</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabItem" style="display:block;">
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>약재명</th>
+                              <th>원산지</th>
+                              <th>가격(g)</th>
+                              <th>적용</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabItem" style="display:block;">
+                      <div class="table type2 table--order">
+                        <table>
+                          <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col width="60">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>약재명</th>
+                              <th>원산지</th>
+                              <th>가격(g)</th>
+                              <th>적용</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" style="text-align:left;">
+                                                                총 검색 건수  <span class="mint">12</span> 건
+                                                            </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>약재명</td>
+                              <td>중국</td>
+                              <td>150원</td>
+                              <td>
+                                <button>
+                                  <img src="./assets/images/ico_plus-2.png" alt="">
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination small mb-4">
+                          <a href="" class="arrow arrow-prev">이전</a>
+                          <a href="" class="active">1</a>
+                          <a href="" class="">2</a>
+                          <a href="" class="">3</a>
+                          <a href="" class="">4</a>
+                          <a href="" class="">5</a>
+                          <a href="" class="arrow arrow-next">다음</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="table mt-8">
+                  <header class="table__header">
+                    <h3>처방 비용</h3>
+                  </header>
+                  <div class="tab-area">
+                    <div class="tabLinks flex items-center">
+                      <a href="#//" class="active" data-tabLink="1">처방 비용</a>
+                      <span class="bar">|</span>
+                      <a href="#//" data-tabLink="2">비용안내</a>
+                      <span class="bar">|</span>
+                      <a href="#//" data-tabLink="3">제환정보</a>
+                    </div>
+                    <div class="tabContents">
+                      {# 처방 비용 #}
+                      <div class="tabItem active" style="display:block;">
+                        <table>
+                          <colgroup>
+                            <col width="125">
+                            <col width="">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th>처방비</th>
+                              <td>
+                                <div class="flex">
+                                  <strong class="ml-auto">27,500</strong>원
+                                                            </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>배송비</th>
+                              <td>
+                                <div class="flex">
+                                                                3,850원 x 1ea
+                                                                <strong class="ml-auto">3,850</strong>원
+                                                            </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="mint">총 합계</th>
+                              <td>
+                                <div class="flex">
+                                  <strong class="ml-auto mint">27,500</strong>원
+                                                            </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      {# 비용안내 #}
+                      <div class="tabItem">
+                        <table>
+                          <colgroup>
+                            <col width="125">
+                            <col width="">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th>배송비</th>
+                              <td>
+                                                            약속처방은 10kg 단위로 배송료가 추가됩니다.<br/>
+                                                            단, 경옥고, 경옥고환, 공진단은 배송무게가 적용
+                                                            되지 않습니다.
+                                                        </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      {# 제환정보 #}
+                      <div class="tabItem">
+                        <table>
+                          <colgroup>
+                            <col width="125">
+                            <col width="">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th>약재비</th>
+                              <td>
+                                <div class="flex">
+                                                                    0원 x 20첩
+                                                                    <strong class="ml-auto">0</strong>원
+                                                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>기본료</th>
+                              <td>
+                                <div class="flex">
+                                                                    일반탕전 x 1ea
+                                                                    <strong class="ml-auto">13,500</strong>원
+                                                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>조제비</th>
+                              <td>
+                                <div class="flex">
+                                                                    190원 x 45팩
+                                                                    <strong class="ml-auto">13,500</strong>원
+                                                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>포장비</th>
+                              <td>
+                                <div class="flex">
+                                                                   500원 x 1ea
+                                                                    <strong class="ml-auto">500</strong>원
+                                                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>배송비</th>
+                              <td>
+                                <div class="flex">
+                                                                   3,850원 x 1ea
+                                                                    <strong class="ml-auto">500</strong>원
+                                                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="mint">총 합계</th>
+                              <td>
+                                <div class="flex">
+                                  <strong class="ml-auto mint">27,500</strong>원
+                                                            </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-box flex justify-end bottomBtn">
+            <a href="" class="button small">처방전 임시저장</a>
+            <a href="" class="button small mint">다음단계(배송정보입력)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {# 간편 환자 추가 #}
+    <div class="modal" style="display:none;">
+      <div class="modal__content type2">
+        <header class="modal__header">
+          <h2 class="modal__title">간편 환자 추가</h2>
+          <button class="modal__close">닫기</button>
+        </header>
+        <div class="modal__body">
+          <div class="cont">
+            <div class="table mt-4 table--patientAdd">
+              <table>
+                <colgroup>
+                  <col width="120">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>환자명</th>
+                    <td>
+                      <div class="input">
+                        <input type="text">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>차트번호</th>
+                    <td>
+                      <div class="input">
+                        <input type="text">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>비고(식별용)</th>
+                    <td>
+                      <div class="input">
+                        <input type="text">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>성별</th>
+                    <td>
+                      <div class="inner flex">
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">선택</option>
+                            <option value="">남성</option>
+                            <option value="">여성</option>
+                          </select>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>생년월일</th>
+                    <td>
+                      <div class="inner flex">
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">년</option>
+                          </select>
+                        </div>
+                        <div class="select mx-2">
+                          <select name="" id="">
+                            <option value="">월</option>
+                          </select>
+                        </div>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">일</option>
+                          </select>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>전화번호</th>
+                    <td>
+                      <div class="inner flex">
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">02</option>
+                          </select>
+                        </div>
+                        <div class="input mx-2">
+                          <input type="text" placeholder="">
+                        </div>
+                        <div class="input">
+                          <input type="text" placeholder="">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>휴대폰번호</th>
+                    <td>
+                      <div class="inner flex">
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">010</option>
+                          </select>
+                        </div>
+                        <div class="input mx-2">
+                          <input type="text" placeholder="">
+                        </div>
+                        <div class="input">
+                          <input type="text" placeholder="">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>주소</th>
+                    <td>
+                      <div class="">
+                        <div class="row flex mb-2">
+                          <div class="input">
+                            <input type="text" id="" placeholder="우편번호" readonly="">
+                          </div>
+                          <button onclick="" class="btn ml-2" style="font-size:14px;">우편번호 찾기</button>
+                        </div>
+                        <div class="row mb-2">
+                          <div class="input">
+                            <input type="text" id="" placeholder="주소" readonly="">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="input">
+                            <input type="text" id="" placeholder="상세주소 입력" readonly="">
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="action-box flex justify-center mt-8">
+              <a href="" class="button small">신청</a>
+              <a href="" class="button small mint">환자 추가하기</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
