@@ -1,0 +1,31 @@
+{% extends 'layout/base.njk' %}
+{% block content %}
+  <div class="container">
+    <div class="sub find">
+      <div class="visual">
+        <div class="wrap">
+          <h2>아이디 / 비밀번호 찾기</h2>
+        </div>
+      </div>
+      <div class="main__section">
+        <div class="wrap">
+          <div class="find__links flex items-center justify-between">
+            <a href="" class="active">아이디 찾기</a>
+            <a href="">비밀번호 찾기</a>
+          </div>
+          <form action="">
+            <div class="form form--accounts">
+              <div class="findAfter">
+                  홍길동 님의 아이디는<br/>
+                  “<span>fkyw***</span>” 입니다.
+              </div>
+              <div class="action-button">
+                <a href="" class="button bg-blue color-white">로그인</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

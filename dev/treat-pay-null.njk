@@ -1,0 +1,717 @@
+{% extends 'layout/base-dashboard.njk' %}
+{% block content %}
+  <div class="admin-content">
+    <div class="admin-header">
+      <h2>수납현황</h2>
+      <div class="breadcrumb">
+        <a href="">홈</a>
+        <span class="bar">></span>
+        <a href="">진료관리</a>
+        <span class="bar">></span>
+        <a href="">수납현황</a>
+      </div>
+    </div>
+
+    <div class="admin-body">
+      <div class="row px-4 bg-white mb-12">
+        <div class="box">
+          <form action="">
+            <div class="form form--admin">
+              <div class="form__row px-0">
+                <div class="input-group flex-1">
+                  <div class="input-inn flex justify-between mb-3">
+                    <div class="select">
+                      <select name="" id="">
+                        <option value="">처방완료일</option>
+                      </select>
+                    </div>
+                    <div class="datepicker-wrap w-340">
+                      <div class="input_box flex items-center">
+                        <input type="text" class="datepicker" placeholder="YYYY-MM-DD">
+                      </div>
+                      <span>-</span>
+                      <div class="input_box flex items-center">
+                        <input type="text" class="datepicker" placeholder="YYYY-MM-DD">
+                      </div>
+                    </div>
+                    <div class="radio-wrap">
+                      <label for="dateAll" class="radio-type2">
+                        <input type="radio" hidden="" id="dateAll" name="date">
+                        <span>전체기간</span>
+                      </label>
+                      <label for="date1" class="radio-type2">
+                        <input type="radio" hidden="" id="date1" name="date" checked>
+                        <span>1개월</span>
+                      </label>
+                      <label for="date2" class="radio-type2">
+                        <input type="radio" hidden="" id="date2" name="date">
+                        <span>3개월</span>
+                      </label>
+                      <label for="date3" class="radio-type2">
+                        <input type="radio" hidden="" id="date3" name="date">
+                        <span>6개월</span>
+                      </label>
+                      <label for="date4" class="radio-type2">
+                        <input type="radio" hidden="" id="date4" name="date">
+                        <span>1년</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="input-inn flex">
+                    <div class="select">
+                      <select name="" id="">
+                        <option value="">환자명</option>
+                      </select>
+                    </div>
+                    <div class="input_box mx-2 w-340">
+                      <input type="text">
+                    </div>
+                    <div class="select mr-2">
+                      <select name="" id="">
+                        <option value="">미수납</option>
+                      </select>
+                    </div>
+                    <a href="" class="button bg-blue color-white btn-lg">검색</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mb-12">
+        <div class="title">
+          <div class="action-button flex">
+            <a href="" class="button btn color-white bg-gray">전체선택</a>
+            <a href="" class="button btn color-gray border-gray bg-white">선택해제</a>
+            <a href="" class="button color-white bg-blue btn">수납완료</a>
+            <a href="" class="button border-blue btn color-blue bg-white">수납취소</a>
+          </div>
+          <p class="ml-auto">
+            총 검색건수 <span>0</span>건의 내역이 있습니다.
+          </p>
+        </div>
+        <div class="box bg-white scroll-box">
+          <div class="table">
+            <table>
+              <colgroup>
+                <col width="50">
+                <col width="40">
+                <col>
+                <col width="60">
+                <col width="80">
+                <col width="50">
+                <col width="130">
+                <col width="120">
+                <col width="160">
+                <col width="65">
+                <col width="75">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>선택</th>
+                  <th>순번</th>
+                  <th>처방번호</th>
+                  <th>환자명</th>
+                  <th>차트번호</th>
+                  <th>성별</th>
+                  <th>생년월일</th>
+                  <th>휴대폰번호</th>
+                  <th>처방완료일시</th>
+                  <th>처방명</th>
+                  <th>처방비</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="11" class="data-null">
+                    검색된 미수납현황이 없습니다.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row px-4 bg-white mb-12">
+        <div class="title border-b">
+          <h2>기본정보</h2>
+          <div class="action-button flex ml-auto">
+            <a href="" class="button btn bg-blue color-white">수납완료</a>
+            <a href="" class="button border-blue color-blue btn">수납취소</a>
+          </div>
+        </div>
+        <div class="box">
+          <form action="">
+            <div class="form form--admin">
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>처방번호</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" value="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>초진/재진</span>
+                  </div>
+                  <div class="select flex-1">
+                    <select name="" id="" readonly>
+                      <option value="">초진</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>접수형태</span>
+                  </div>
+                  <div class="select flex-1">
+                    <select name="" id="" readonly>
+                      <option value="">선택</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>처방완료일시</span>
+                  </div>
+                  <div class="datepicker-wrap w-340">
+                    <div class="input_box flex items-center">
+                      <input type="text" class="datepicker" readonly placeholder="YYYY-MM-DD">
+                    </div>
+                  </div>
+                  <div class="select mx-2">
+                    <select name="" id="" readonly>
+                      <option value="">00시</option>
+                    </select>
+                  </div>
+                  <div class="select">
+                    <select name="" id="" readonly>
+                      <option value="">00분</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="col">
+                  <div class="form-title">
+                    <span>기초문진</span>
+                  </div>
+                  <div class="input_box textarea-wrap">
+                    <textarea readonly></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row px-4 bg-white mb-12">
+        <div class="title border-b">
+          <h2>환자정보</h2>
+        </div>
+        <div class="box">
+          <form action="">
+            <div class="form form--admin rx">
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>환자명</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>차트번호</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>고객분류</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>생년월일</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>나이</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>성별</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>국적</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>보험구분</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>보험증 번호</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>담당의</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>주치의</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>현주증상</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>전화번호</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>휴대폰번호</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>
+                      연락가능한<br/>
+                      시간
+                    </span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>추천인</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>보유포인트</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>환자등록일</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="col">
+                  <div class="form-title">
+                    <span>주소</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row px-4 bg-white mb-12">
+        <div class="title border-b">
+          <h2>처방정보</h2>
+          <p class="ml-auto mr-3">용량조정</p>
+          <div class="select">
+            <select name="" id="" readonly>
+              <option value="">100%</option>
+            </select>
+          </div>
+        </div>
+        <div class="box">
+          <form action="">
+            <div class="form form--admin">
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>처방종류</span>
+                  </div>
+                  <div class="select flex-1">
+                    <select name="" id="" readonly>
+                      <option value="">선택</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>처방전명</span>
+                  </div>
+                  <div class="select flex-1">
+                    <select name="" id="" readonly>
+                      <option value="">선택</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>처방접수</span>
+                  </div>
+                  <div class="select flex-1">
+                    <select name="" id="" readonly>
+                      <option value="">1</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>약재구성</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="약재명 / 10 g" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>약재구성</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="약재명 / 10 g" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>약재구성</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="약재명 / 10 g" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>약재구성</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="약재명 / 10 g" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>약재구성</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="약재명 / 10 g" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>약재구성</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="약재명 / 10 g" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>약재구성</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="약재명 / 10 g" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>약재구성</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="약재명 / 10 g" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>약재구성</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="약재명 / 10 g" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="col">
+                  <div class="form-title">
+                    <span>상세문진</span>
+                  </div>
+                  <div class="input_box textarea-wrap">
+                    <textarea readonly></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row px-4 bg-white mb-12">
+        <div class="title border-b">
+          <h2>수령정보</h2>
+          <div class="ml-auto">
+            <label for="same" class="checkbox">
+              <p class="mr-3">환자정보와 동일</p>
+              <input type="checkbox" hidden="" id="same">
+              <span></span>
+            </label>
+          </div>
+        </div>
+        <div class="box">
+          <form action="">
+            <div class="form form--admin">
+              <div class="form__row border-b">
+                <div class="col ">
+                  <div class="form-title">
+                    <span>수령방법</span>
+                  </div>
+                  <div class="select w-180">
+                    <select name="" id="" readonly>
+                      <option value="">택배</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col items-start">
+                  <div class="form-title">
+                    <span>주소</span>
+                  </div>
+                  <div class="input-group flex-1">
+                    <div class="inpur-inn flex items-center mb-3">
+                      <div class="input_box">
+                        <input type="text" value="" readonly>
+                      </div>
+                      <div class="input_box mx-4">
+                        <input type="text" placeholder="" readonly>
+                      </div>
+                      <a href="" class="button bg-blue color-white btn-lg">우편번호 찾기</a>
+                    </div>
+                    <div class="inpur-inn">
+                      <div class="input_box w-full">
+                        <input type="text" placeholder="" readonly>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>수령인</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>전화번호</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>휴대폰번호</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row px-4 bg-white mb-12">
+        <div class="title border-b">
+          <h2>포장재</h2>
+        </div>
+        <div class="box packing-wrap">
+          <div class="col">
+            <h3>파우치</h3>
+            <div class="img">
+              <img src="./assets/images/ico_null.png" alt="">
+            </div>
+            <a href="" class="button btn-lg disabled">선택</a>
+          </div>
+          <div class="col">
+            <h3>포장박스</h3>
+            <div class="img">
+              <img src="./assets/images/ico_null.png" alt="">
+            </div>
+            <a href="" class="button btn-lg disabled">선택</a>
+          </div>
+          <div class="col">
+            <h3>한약박스</h3>
+            <div class="img">
+              <img src="./assets/images/ico_null.png" alt="">
+            </div>
+            <a href="" class="button btn-lg disabled">선택</a>
+          </div>
+        </div>
+      </div>
+      <div class="row px-4 bg-white">
+        <div class="title border-b">
+          <h2>약재비</h2>
+        </div>
+        <div class="box">
+          <form action="">
+            <div class="form form--admin rx">
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>처방비</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>약재비</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>탕전비</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>포장비</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>배송비</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>수수료</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="col">
+                  <div class="form-title">
+                    <span>총 비용</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="" readonly>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="action-button mt-16 justify-center flex">
+        <a href="" class="button btn-lg border-gray bg-white color-mediumgray">처방전 출력</a>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

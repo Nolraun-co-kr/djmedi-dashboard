@@ -1,0 +1,118 @@
+.lnb-wrap {
+  @apply flex-none justify-end;
+  background:#fff;
+}
+
+.lnb {
+  width: 200px;
+  @apply flex-none;
+}
+.lnb__title {
+  height: 65px;
+  font-size: 18px;
+  color: #222;
+  line-height: 65px;
+  font-weight: 600;
+  padding-left: 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.lnb__link {
+  @apply flex items-center relative;
+  height: 70px;
+  padding-left: 25px;
+  &.active {
+    background: #f9fbff;
+    &::after {
+      content: '';
+      width: 3px;
+      height: 40px;
+      background: #0e7a9e;
+      @apply absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    span {
+      color: #222;
+    }
+  }
+  span {
+    padding-left: 30px;
+    font-size: 18px;
+    color: #999;
+    font-weight: 600;
+  }
+}
+.lnb__item {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  &:nth-child(1) {
+    .lnb__link {
+      span {
+        background: url('../images/ico_lnb-01.png') no-repeat left center;
+      }
+      &.active {
+        span {
+          background: url('../images/ico_lnb-01_on.png') no-repeat left center;
+        }
+      }
+    }
+  }
+  &:nth-child(2) {
+    .lnb__link {
+      span {
+        background: url('../images/ico_lnb-02.png') no-repeat left center;
+      }
+      &.active {
+        span {
+          background: url('../images/ico_lnb-02_on.png') no-repeat left center;
+        }
+      }
+    }
+  }
+  &:nth-child(3) {
+    border-bottom: none;
+    .lnb__link {
+      span {
+        background: url('../images/ico_lnb-03.png') no-repeat left center;
+      }
+      &.active {
+        span {
+          background: url('../images/ico_lnb-03_on.png') no-repeat left center;
+        }
+      }
+    }
+  }
+}
+
+.lnb__depth {
+  background: #f9fbff;
+}
+.lnb__depth-link {
+  @apply flex items-center;
+  height: 70px;
+  padding-left: 50px;
+  font-size: 16px;
+  color: #999;
+  &.active {
+    color: #222;
+  }
+}
+.lnb__depth2 {
+  padding-bottom: 20px;
+}
+.lnb__depth2-link {
+  @apply inline-block;
+  line-height: 30px;
+  padding-left: 50px;
+  span {
+    font-size: 14px;
+    color: #999;
+  }
+  &.active {
+    span {
+      color: #666;
+      border-bottom: 1px solid #666;
+    }
+  }
+}

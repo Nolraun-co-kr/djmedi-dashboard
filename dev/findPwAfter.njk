@@ -1,0 +1,46 @@
+{% extends 'layout/base.njk' %}
+{% block content %}
+  <div class="container">
+    <div class="sub find">
+      <div class="visual">
+        <div class="wrap">
+          <h2>아이디 / 비밀번호 찾기</h2>
+        </div>
+      </div>
+      <div class="main__section">
+        <div class="wrap">
+          <div class="find__links flex items-center justify-between">
+            <a href="">아이디 찾기</a>
+            <a href="" class="active">비밀번호 찾기</a>
+          </div>
+          <form action="">
+            <div class="form form--accounts">
+              <div class="findAfter">
+                  새로운 비밀번호를 설정해주세요.
+              </div>
+
+              <div class="form__row">
+                <div class="col">
+                  <div class="input_box">
+                    <input type="password" placeholder="새 비밀번호 (8~15자의 영문 소문자, 숫자만 사용)">
+                  </div>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="col">
+                  <div class="input_box">
+                    <input type="password" placeholder="새 비밀번호 재입력">
+                  </div>
+                </div>
+              </div>
+
+              <div class="action-button">
+                <a href="" class="button bg-blue color-white">비밀번호 변경</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

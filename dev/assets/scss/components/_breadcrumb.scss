@@ -1,15 +1,12 @@
 .breadcrumb {
-    height: 80px;
-    @apply flex items-center;
-    margin-bottom: 30px;
-    span {
-        font-size: 14px;
-        color: #606060;
-        padding-right: 20px;
-        margin-right: 10px;
-        background: url('../images/ico_breadcrumb-arrow.png') no-repeat right center;
-        &:last-child {
-            background: none;
-        }
-    }
+  @apply flex items-center;
+  a {
+    font-size: 15px;
+    color: #666;
+  }
+  .bar {
+    font-size: 15px;
+    color: #666;
+    margin: 0 5px;
+  }
 }

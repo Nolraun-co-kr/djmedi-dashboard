@@ -1,80 +1,39 @@
 .header {
-    position: relative;
-    z-index: 1000;
+  @apply absolute left-0 top-0 w-full;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  z-index: 1100;
+  .wrap {
+    height: 100px;
+  }
+}
+.header__qna {
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: 25px;
+  padding: 0 33px;
+  span {
+    font-size: 16px;
+    color: #fff;
+    strong{
+      margin-right: 10px;
+    }
+  }
 }
 
-.header__top {
-    .wrap {
-        height: 120px;
+
+.header--dashboard {
+  background: #fff;
+  .store-name {
+    font-size: 22px;
+    color: #222;
+    font-weight: 600;
+  }
+  .date {
+    font-size: 16px;
+    color: #222;
+    font-weight: 600;
+    span {
+      font-weight: 500;
     }
-}
-.header__logo {
-    width: 240px;
-}
-.header__etc {
-    a {
-        font-size: 14px;
-        color: #000;
-        padding: 1em;
-        font-weight: 500;
-        position: relative;
-        &::after {
-            content: '';
-            position: absolute;
-            width:1px;
-            height:10px;
-            background: #e1e1e1;
-            left:0;
-            top:50%;
-            transform: translateY(-50%);
-        }
-        &:first-child::after {
-            display: none;
-        }
-        &:last-child {
-            padding-right: 0;
-        }
-        &.mypage {
-            padding-right: 40px;
-            background: url('../images/ico_user.png') no-repeat right center;
-        }
-    }
-}
-.header__gnb {
-    border-top: 1px solid #e1e1e1;
-    border-bottom: 1px solid #e1e1e1;
-    .nav__depth1 {
-        position: relative;
-        width: 160px;
-        display: flex;
-    }
-    .nav__depth1__item {
-        width: 100%;
-        line-height: 60px;
-        font-size: 18px;
-        font-weight: 500;
-        color: #000;
-        font-weight: 600;
-        text-align: center;
-        &.active {
-            color: #4eb8a1;
-        }
-    }
-    .nav__depth2 {
-        background: rgba(255,255,255,.6);
-        position: absolute;
-        left:0;
-        top:61px;
-        width: 100%;
-        padding: 20px 0;
-        display: none;
-    }
-    .nav__depth2__item {
-        font-size: 14px;
-        color: #010101;
-        display: block;
-        line-height: 32px;
-        padding: 0 20px;
-        cursor: pointer;
-    }
+  }
 }

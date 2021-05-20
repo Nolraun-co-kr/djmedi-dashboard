@@ -1,0 +1,395 @@
+{% extends 'layout/base-dashboard.njk' %}
+{% block content %}
+  <div class="admin-content">
+    <div class="admin-header">
+      <h2>환자현황</h2>
+      <div class="breadcrumb">
+        <a href="">홈</a>
+        <span class="bar">></span>
+        <a href="">환자관리</a>
+        <span class="bar">></span>
+        <a href="">환자현황</a>
+      </div>
+    </div>
+
+    <div class="admin-body">
+      <div class="row px-4 bg-white mb-12">
+        <div class="box">
+          <form action="">
+            <div class="form form--admin">
+              <div class="form__row px-0">
+                <div class="input-group flex-1">
+                  <div class="input-inn flex justify-between mb-3">
+                    <div class="select">
+                      <select name="" id="">
+                        <option value="">처방완료일</option>
+                      </select>
+                    </div>
+                    <div class="datepicker-wrap w-340">
+                      <div class="input_box flex items-center">
+                        <input type="text" class="datepicker" placeholder="YYYY-MM-DD">
+                      </div>
+                      <span>-</span>
+                      <div class="input_box flex items-center">
+                        <input type="text" class="datepicker" placeholder="YYYY-MM-DD">
+                      </div>
+                    </div>
+                    <div class="radio-wrap">
+                      <label for="dateAll" class="radio-type2">
+                        <input type="radio" hidden="" id="dateAll" name="date">
+                        <span>전체기간</span>
+                      </label>
+                      <label for="date1" class="radio-type2">
+                        <input type="radio" hidden="" id="date1" name="date" checked>
+                        <span>1개월</span>
+                      </label>
+                      <label for="date2" class="radio-type2">
+                        <input type="radio" hidden="" id="date2" name="date">
+                        <span>3개월</span>
+                      </label>
+                      <label for="date3" class="radio-type2">
+                        <input type="radio" hidden="" id="date3" name="date">
+                        <span>6개월</span>
+                      </label>
+                      <label for="date4" class="radio-type2">
+                        <input type="radio" hidden="" id="date4" name="date">
+                        <span>1년</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="input-inn flex">
+                    <div class="select">
+                      <select name="" id="">
+                        <option value="">환자명</option>
+                      </select>
+                    </div>
+                    <div class="input_box mx-2 w-340">
+                      <input type="text">
+                    </div>
+                    <a href="" class="button bg-blue color-white btn-lg">검색</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mb-12">
+        <div class="title">
+          <div class="action-button flex">
+            <a href="" class="button btn color-white bg-gray">전체선택</a>
+            <a href="" class="button btn color-gray border-gray bg-white">선택해제</a>
+            <a href="" class="button btn border-gray bg-white color-lightgray">환자등록</a>
+          </div>
+          <p class="ml-auto">
+            총 검색건수 <span>0</span>건의 내역이 있습니다.
+          </p>
+        </div>
+        <div class="box bg-white scroll-box">
+          <div class="table">
+            <table>
+              <colgroup>
+                <col width="50">
+                <col width="40">
+                <col widht="75">
+                <col width="60">
+                <col widht="70">
+                <col width="50">
+                <col width="130">
+                <col width="130">
+                <col width="40">
+                <col>
+                <col>
+                <col width="110">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>선택</th>
+                  <th>순번</th>
+                  <th>고객분류</th>
+                  <th>환자명</th>
+                  <th>차트번호</th>
+                  <th>성별</th>
+                  <th>생년월일</th>
+                  <th>휴대폰번호</th>
+                  <th>국적</th>
+                  <th>보험구분</th>
+                  <th>보험증번호</th>
+                  <th>환자등록일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="data-null" colspan="12">검색된 환자현황이 없습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row px-4 bg-white mb-12">
+        <div class="title border-b">
+          <h2>환자정보</h2>
+          <div class="action-button flex ml-auto">
+            <a href="" class="button btn bg-blue color-white">카드등록</a>
+            <a href="" class="button color-lightgray border-gray bg-lightgray btn">저장</a>
+          </div>
+        </div>
+        <div class="box">
+          <form action="">
+            <div class="form form--admin rx">
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>환자명</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="홍길동" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>차트번호</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="1234567" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>고객분류</span>
+                  </div>
+                  <div class="select flex-1">
+                    <select name="" id="" readonly>
+                      <option value="">분류명</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>생년월일</span>
+                  </div>
+                  <div class="datepicker-wrap">
+                    <div class="input_box flex items-center">
+                      <input type="text" class="datepicker" placeholder="YYYY-MM-DD" readonly>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>나이</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="44세" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>성별</span>
+                  </div>
+                  <div class="select flex-1">
+                    <select name="" id="" readonly>
+                      <option value="">남성</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>국적</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="한국" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>보험구분</span>
+                  </div>
+                  <div class="select flex-1">
+                    <select name="" id="" readonly>
+                      <option value="">구분명</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>보험증 번호</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="012345" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>담당의</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="홍길동" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>주치의</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="홍길동" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>현주증상</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="증상명" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>전화번호</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="03112345678" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>휴대폰번호</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="01012345678" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>
+                      연락가능한<br/>
+                      시간
+                    </span>
+                  </div>
+                  <div class="flex items-center select-time">
+                    <div class="select">
+                      <select name="" id="" readonly>
+                        <option value="">09</option>
+                      </select>
+                    </div>
+                    <span>-</span>
+                    <div class="select">
+                      <select name="" id="" readonly>
+                        <option value="">15</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>추천인</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="김미영" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>보유포인트</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="100" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>환자등록일</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="YYYY.MM.DD" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="col">
+                  <div class="form-title">
+                    <span>주소</span>
+                  </div>
+                  <div class="input-group flex-1">
+                    <div class="inpur-inn flex items-center mb-3">
+                      <div class="input_box">
+                        <input type="text" value="12345" readonly>
+                      </div>
+                      <div class="input_box mx-4">
+                        <input type="text" placeholder="경기도 고양시 일산동구 장항동 859" readonly>
+                      </div>
+                      <a href="" class="button bg-blue color-white btn-lg">우편번호 찾기</a>
+                    </div>
+                    <div class="inpur-inn">
+                      <div class="input_box w-full">
+                        <input type="text" placeholder="동양메이저 1234호" readonly>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row bg-white mb-12">
+        <div class="title border-b px-4">
+          <h2>진료내역 (xx)</h2>
+        </div>
+        <div class="box scroll-box">
+          <div class="table mouseover">
+            <table>
+              <colgroup>
+                <col width="70">
+                <col>
+                <col>
+                <col width="90">
+                <col width="90">
+                <col width="110">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>번호</th>
+                  <th>처방종류</th>
+                  <th>처방전명</th>
+                  <th>담당의</th>
+                  <th>주치의</th>
+                  <th>처방일시</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="data-null thin" colspan="6">진료내역이 없습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row px-4 bg-white mb-12">
+        <div class="title border-b">
+          <h2>진료자료</h2>
+        </div>
+        <div class="box flex justify-center py-8">
+          <a href="" class="button btn-lg disabled">진료 확인서</a>
+          <a href="" class="button btn-lg disabled">통원확인서</a>
+          <a href="" class="button btn-lg disabled">소견서</a>
+          <a href="" class="button btn-lg disabled">진단서</a>
+          <a href="" class="button btn-lg disabled">진료의뢰서</a>
+          <a href="" class="button btn-lg disabled">처방전</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

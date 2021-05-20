@@ -1,0 +1,93 @@
+{% extends 'layout/base-dashboard.njk' %}
+{% block content %}
+  <div class="admin-content">
+    <div class="admin-header">
+      <h2>비용관리</h2>
+      <div class="breadcrumb">
+        <a href="">홈</a>
+        <span class="bar">></span>
+        <a href="">관리자</a>
+        <span class="bar">></span>
+        <a href="">기타정보 관리</a>
+        <span class="bar">></span>
+        <a href="">비용관리</a>
+      </div>
+    </div>
+
+    <div class="admin-body">
+      <div class="row px-4 bg-white">
+        <div class="title border-b">
+          <div class="action-button flex ml-auto">
+            <a href="" class="button border-blue color-blue btn">초기화</a>
+            <a href="" class="button color-lightgray border-gray bg-lightgray btn">저장</a>
+          </div>
+        </div>
+        <div class="box">
+          <form action="">
+            <div class="form form--admin">
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>조제비</span>
+                  </div>
+                  <div class="input_box flex items-center">
+                    <input type="text" class="flex-1 text-right">
+                    <span>원</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>탕전비</span>
+                  </div>
+                  <div class="input_box flex items-center">
+                    <input type="text" class="flex-1 text-right">
+                    <span>원</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>포장비</span>
+                  </div>
+                  <div class="input_box flex items-center">
+                    <input type="text" class="flex-1 text-right">
+                    <span>원</span>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="col">
+                  <div class="form-title">
+                    <span>배송비</span>
+                  </div>
+                  <div class="input_box flex items-center">
+                    <input type="text" class="flex-1 text-right">
+                    <span>원</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>-</span>
+                  </div>
+                  <div class="input_box flex items-center">
+                    <input type="text" class="flex-1 text-right">
+                    <span>원</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>-</span>
+                  </div>
+                  <div class="input_box flex items-center">
+                    <input type="text" class="flex-1 text-right">
+                    <span>원</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

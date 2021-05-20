@@ -1,23 +1,44 @@
 .button {
-    &.small {
-        width: 200px;
-        height: 45px;
-        font-size: 16px;
-        color: #fff !important;
-        background: #606060;
-        margin-right: 10px;
-        text-align: center;
-        line-height: 45px;
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-    &.mint {
-        background: #66b39e;
-    }
-    &.border {
-        background: none;
-        border: 1px solid #e1e1e1;
-        color: #606060 !important;
-    }
+  @apply flex items-center justify-center;
+  font-size: 15px;
+  &.bg-blue {
+    background: #0e7a9e;
+  }
+  &.bg-gray {
+    background: #333;
+  }
+  &.bg-lightgray {
+    background: #f1f1f1;
+  }
+  &.bg-white {
+    background: #fff;
+  }
+  &.color-white {
+    color: #fff;
+  }
+  &.color-blue {
+    color: #0e7a9e;
+  }
+  &.color-lightgray {
+    color: #666;
+  }
+  &.color-mediumgray {
+    color: #999;
+  }
+  &.color-gray {
+    color: #222;
+  }
+  &.border-blue {
+    border: 1px solid #0e7a9e;
+  }
+  &.border-lightgray {
+    border: 1px solid #f1f1f1;
+  }
+  &.border-gray {
+    border: 1px solid #999;
+  }
+  &.disabled {
+    background: #999;
+    color: #fff;
+  }
 }

@@ -1,0 +1,29 @@
+.noticebar {
+  border-bottom: 1px solid #e0e0e0;
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+
+  .wrap {
+    @apply flex items-center;
+    height: 60px;
+    padding-left: 208px;
+  }
+  .mark {
+    @apply flex items-center justify-center;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 24px;
+    background: #0e7a9e;
+  }
+  p {
+    font-size: 15px;
+    color: #666;
+    strong {
+      color: #222;
+    }
+  }
+}

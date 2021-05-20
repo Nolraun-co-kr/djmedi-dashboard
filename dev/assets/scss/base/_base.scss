@@ -12,6 +12,7 @@ body {
     'Sans-serif';
   font-weight: 400;
   letter-spacing: -.03em;
+  background: #f1f5f8;
 }
 .wrap {
   width: 100%;
@@ -34,4 +35,23 @@ select {
 table {
   table-layout: fixed;
   width: 100%;
+}
+
+
+.container {
+  position: relative;
+  z-index: 1001;
+}
+
+body {
+  &:after {
+    content: '';
+    background:#fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    display: block;
+  }
 }

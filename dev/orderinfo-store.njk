@@ -1,0 +1,143 @@
+{% extends 'layout/base-dashboard.njk' %}
+{% block content %}
+  <div class="admin-content">
+    <div class="admin-header">
+      <h2>매장정보 관리</h2>
+      <div class="breadcrumb">
+        <a href="">홈</a>
+        <span class="bar">></span>
+        <a href="">관리자</a>
+        <span class="bar">></span>
+        <a href="">기타정보 관리</a>
+        <span class="bar">></span>
+        <a href="">매장정보 관리</a>
+      </div>
+    </div>
+
+    <div class="admin-body">
+      <div class="row px-4 bg-white">
+        <div class="title border-b">
+          <div class="action-button flex ml-auto">
+            <a href="" class="button border-blue color-blue btn">초기화</a>
+            <a href="" class="button color-lightgray border-gray bg-lightgray btn">저장</a>
+          </div>
+        </div>
+        <div class="box">
+          <form action="">
+            <div class="form form--admin">
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>매장코드</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" value="0123456789" readonly>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>한약국명</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" placeholder="한약국명">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>매장 등록일</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text" value="YYYY.MM.DD" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>대표자명</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>전화번호</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-title">
+                    <span>면허정보</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col items-start">
+                  <div class="form-title">
+                    <span>주소</span>
+                  </div>
+                  <div class="input-group flex-1">
+                    <div class="inpur-inn flex items-center mb-3">
+                      <div class="input_box">
+                        <input type="text" value="12345" readonly>
+                      </div>
+                      <div class="input_box mx-4">
+                        <input type="text" placeholder="경기도 고양시 일산동구 장항동 859">
+                      </div>
+                      <a href="" class="button bg-blue color-white btn-lg">우편번호 찾기</a>
+                    </div>
+                    <div class="inpur-inn">
+                      <div class="input_box w-full">
+                        <input type="text" placeholder="동양메이저 1234호">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row border-b">
+                <div class="col">
+                  <div class="form-title">
+                    <span>매장로고</span>
+                  </div>
+                  <div class="input_box mr-4">
+                    <input type="text">
+                  </div>
+                  <a href="javascript:showModal('modal-file');" class="button bg-blue color-white btn-lg">파일찾기</a>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="col">
+                  <div class="form-title">
+                    <span>비고</span>
+                  </div>
+                  <div class="input_box">
+                    <input type="text">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- file 찾기 -->
+  <div class="modal modal--file" id="modal-file">
+    <div class="modal__inner">
+      <div class="modal__head">
+        <h2>filename</h2>
+        <a href="" class="print ml-auto mr-2">프린트</a>
+        <a href="#//" class="modal__close">닫기</a>
+      </div>
+      <div class="modal__body"></div>
+    </div>
+  </div>
+
+{% endblock %}

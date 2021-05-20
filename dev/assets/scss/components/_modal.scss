@@ -1,180 +1,288 @@
 .modal {
-    z-index: 9999;
-    background: rgba(0,0,0,.5);
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @apply absolute;
+  left: 50%;
+  top: 240px;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: none;
 }
-.modal__content {
-    width: 1100px;
-    background: #fff;
-    position: relative;
-    &.type2 {
-        width: 680px;
+.modal__inner {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.dim {
+  @apply w-full h-full fixed left-0 top-0;
+  opacity: .7;
+  background: #000;
+  z-index: 9998;
+  display: none;
+}
+
+.modal--guide {
+  .modal__inner {
+    width: 1000px;
+  }
+  .modal__head {
+    @apply flex items-center;
+    height: 90px;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 50px;
+  }
+  .modal__body {
+    padding: 60px 50px;
+  }
+  h2 {
+    font-size: 26px;
+    color: #222;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 24px;
+    color: #222;
+    font-weight: 600;
+    @apply relative;
+    padding-top: 20px;
+    margin-bottom: 35px;
+    &::after {
+      content: '';
+      width: 28px;
+      height: 4px;
+      background: #0e7a9e;
+      @apply absolute;
+      left: 0;
+      top: 0;
     }
-}
-.modal__header {
-    display: flex;
-    align-items: center;
-    background: #363636;
-    height: 50px;
-}
-.modal__title {
-    padding-left: 30px;
-    margin-left: 30px;
-    line-height: 50px;
-    background: url('../images/ico_check.png') no-repeat left center;
-    color: #fff;
+  }
+  .guide__process {
+    ul {
+      @apply flex items-center;
+    }
+    li {
+      width: 25%;
+      @apply text-center relative;
+      &::after {
+        content: '';
+        width: 16px;
+        height: 26px;
+        background: url('../images/ico_arrow.png') no-repeat right center;
+        @apply absolute;
+        right: 0;
+        top: 52px;
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+    .img {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto;
+      @apply flex items-center justify-center;
+      background: #fafafa;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .txt {
+      font-size: 20px;
+      color: #222;
+      line-height: 28px;
+      span {
+        font-size: 18px;
+        color: #0e7a9e;
+        font-weight: 600;
+      }
+    }
+  }
+  .guide__tip {
+    li {
+      font-size: 18px;
+      color: #222;
+      line-height: 32px;
+    }
+  }
+  .guide__docu {
+    .table {
+      @apply border-t border-b;
+      border-color: #e0e0e0;
+    }
+    th {
+      height: 70px;
+      background: #fafafa;
+      font-size: 20px;
+      color: #222;
+      border-right: 1px solid #e0e0e0;
+      &:last-child {
+        border-right: none;
+      }
+    }
+    td {
+      height: 160px;
+      background: #fff;
+      border-right: 1px solid #e0e0e0;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+  .button {
+    max-width: 380px;
+    margin: 0 auto;
+    height: 56px;
+    border-radius: 5px;
     font-size: 18px;
-    flex: 1;
+  }
 }
 .modal__close {
-    width: 50px;
-    height: 50px;
-    flex: none;
-    background: url('../images/ico_close.png') no-repeat center #000;
-    text-indent:-9999px;
-    overflow: hidden;
-}
-.modal__body {
-    padding: 20px 40px 40px;
-    &.pd10 {
-        padding: 20px 10px;
-    }
-}
-.modal {
-    .subTit {
-        border-bottom: 1px solid #ececec;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        h3 {
-            font-size: 14px;
-            color: #000;
-            font-weight: 500;
-            line-height: 1.5em;
-        }
-        a {
-            font-size: 15px;
-            height: 30px;
-            width: auto;
-            line-height: 30px;
-            padding: 0 10px;
-        }
-
-        &.type2 {
-            text-align: center;
-            padding: 30px 0;
-            @apply border-t border-b;
-            border-color: 1px solid #ececec;
-            h3 {
-                font-size: 18px;
-            }
-        }
-    }
-    .scroll {
-        height: 500px;
-        overflow: auto;
-        font-size: 14px;
-        line-height: 24px;
-        color: #000;
-        word-break: keep-all;
-        padding: 20px;
-        background: #ebebeb;
-    }
-}
-.modal {
-    .input {
-        height: 50px;
-        input {
-            font-size: 14px;
-            color: #606060;
-            &::placeholder {
-                font-size: 14px;
-                color: #606060;
-            }
-            &.mint {
-                color: #4eb8a1;
-                &::placeholder {
-                    color: #4eb8a1;
-                }
-            }
-        }
-        &.h45 {
-            height: 45px;
-        }
-    }
-    .result {
-        margin: 20px 0;
-        padding: 20px 0;
-        border-top: 2px solid #e7e7e7;
-        border-bottom: 2px solid #e7e7e7;
-        .tit {
-            font-size: 18px;
-            color: #606060;
-            margin-bottom: 10px;
-        }
-        .txt {
-            background: #fafafa;
-            border: 1px solid #e7e7e7;
-            padding: 15px;
-            .item {
-                font-size: 14px;
-                color: #606060;
-                line-height: 24px;
-                &.dataNone {
-                    color: #000;
-                    font-weight: 600;
-                    text-align: center;
-                }
-            }
-        }
-    }
-    .cont {
-        .txt {
-            p {
-                font-size: 15px;
-                color: #606060;
-                line-height: 30px;
-                span {
-                    color: #4eb8a1;
-                }
-            }
-        }
-    }
+  @apply inline-block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url('../images/ico_close-modal.png') no-repeat center;
 }
 
-.modal {
-    .paymentTxt {
-        font-size: 16px;
-        color: #202020;
-        line-height: 1.5em;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #d7d7d7;
-        a {
-            color: #4eb8a1;
-            font-size: 16px;
-            text-decoration: underline;
-        }
+.modal--file {
+  .modal__inner {
+    width: 400px;
+    height: 500px;
+  }
+  .modal__head {
+    @apply flex items-center;
+    height: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 15px;
+    h2 {
+      font-size: 16px;
+      color: #222;
     }
+    a {
+      width: 30px;
+      height: 30px;
+      text-indent: -9999px;
+      overflow: hidden;
+      &.print {
+        background: url('../images/ico_print.png') no-repeat center;
+      }
+    }
+  }
 }
-.modal--patientcare {
-    .select {
-        height: 45px;
-        
-        &.w-full {
-            width: 100% !important;
-        }
+
+.modal--herbsearch {
+  .modal__inner {
+    width: 400px;
+  }
+  .modal__head {
+    height: 60px;
+    @apply flex items-center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 30px;
+    h2 {
+      font-style: 20px;
+      color: #222;
+      font-weight: 600;
     }
-    .button {
-        width: 120px;
+  }
+  .modal__body {
+    padding: 20px 30px 40px;
+  }
+  .search_box {
+    height: 44px;
+    margin-bottom: 10px;
+    input {
+      padding: 0 5px 0 13px;
     }
-    .input {
-        max-width: 100%;
+    .search-btn {
+      width: 44px;
     }
+  }
+  .herblist {
+    height: 240px;
+    overflow: scroll;
+    li {
+      @apply flex items-center;
+      height: 40px;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 0 10px;
+    }
+    a {
+      font-style: 15px;
+      color: #999;
+      &:hover {
+        color: #0e7a9e;
+      }
+    }
+  }
+}
+
+.modal--patient {
+  .modal__inner {
+    width: 400px;
+  }
+  .modal__head {
+    height: 60px;
+    @apply flex items-center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 30px;
+    h2 {
+      font-style: 20px;
+      color: #222;
+      font-weight: 600;
+    }
+  }
+  .modal__body {
+    padding: 0 30px 40px;
+  }
+  .form-title {
+    width: 80px;
+  }
+  .action-button {
+    margin-top: 30px;
+  }
+}
+
+.modal--notice {
+  .modal__inner {
+    width: 700px;
+  }
+  .modal__body {
+    padding-bottom: 40px;
+  }
+  .modal__head {
+    height: 80px;
+    border-bottom: 1px solid #e0e0e0;
+    @apply relative;
+    margin-bottom: 100px;
+    h2 {
+      @apply absolute;
+      left: 50%;
+      top: 130px;
+      font-size: 20px;
+      color: #0e7a9e;
+      font-weight: 600;
+      transform: translateX(-50%);
+      &::after {
+        content:'';
+        width: 78px;
+        height: 78px;
+        background: url('../images/ico_bell.png') no-repeat center #f1f1f1;
+        @apply absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: -90px;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .notice-cont {
+    height: 240px;
+    padding: 20px 40px;
+    p {
+      font-size: 15px;
+      color: #222;
+    }
+  }
 }

@@ -1,37 +1,13 @@
-.footer__top {
-    @apply border-b border-t;
-    border-color: #ebebeb;
-}
-.footer__links {
-    a {
-        font-size: 13px;
-        color: #000;
-        line-height: 60px;
-        & ~ a {
-            margin-left: 50px;
-        }
-    }
-}
-.footer__bottom {
-    padding: 40px 0;
+.footer {
+  background: #333;
+  padding: 60px 0;
+  @apply relative;
+  z-index: 1100;
 }
 .footer__logo {
-    font-size: 18px;
-    color: #000;
-    font-weight: 600;
+  margin-bottom: 30px;
 }
-.footer__info {
-    font-size: 15px;
-    color: #000;
-    line-height: 22px;
-    strong {
-        font-size: 16px;
-        color: #000;
-        font-weight: 600;
-        line-height: 40px;
-    }
-    .space {
-        display: inline-block;
-        padding: 0 .5em;
-    }
+.copyright {
+  font-size: 16px;
+  color: #999;
 }

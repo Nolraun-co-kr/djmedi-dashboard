@@ -1,0 +1,68 @@
+{% extends 'layout/base-dashboard_main.njk' %}
+{% block content %}
+  <div class="container">
+    <div class="main-dashboard">
+      <div class="dashboard-header">
+        <div class="wrap">
+          <h2>대기실 상황</h2>
+        </div>
+      </div>
+      <div class="dashboard-content">
+        <div class="wrap">
+          <div class="table">
+            <table>
+              <colgroup>
+                <col>
+                <col>
+                <col>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>대기</th>
+                  <th>대기</th>
+                  <th>수납</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>홍길동</td>
+                  <td>홍길동 (진료중)</td>
+                  <td>홍길동 (대기중)</td>
+                </tr>
+                <tr>
+                  <td>홍길동</td>
+                  <td>홍길동 (진료중)</td>
+                  <td>홍길동 (대기중)</td>
+                </tr>
+                <tr>
+                  <td>홍길동</td>
+                  <td>홍길동 (진료중)</td>
+                  <td>홍길동 (대기중)</td>
+                </tr>
+                <tr>
+                  <td>홍길동</td>
+                  <td>홍길동 (진료중)</td>
+                  <td>홍길동 (대기중)</td>
+                </tr>
+                <tr>
+                  <td>홍길동</td>
+                  <td>-</td>
+                  <td>홍길동 (대기중)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-foot">
+        <div class="wrap flex items-center">
+          <div class="notice-text">
+            <p>
+              공지내용 공지내용 공지내용
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
