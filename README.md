@@ -7,7 +7,6 @@
 | main 솔루션사용신청 | [:link:](https://loving-wing-2390d9.netlify.app/index.html) |
 | main 가입서류안내 modal | [:link:](https://loving-wing-2390d9.netlify.app/index.htm) |
 | main 가이드다운로드 | [:link:](https://loving-wing-2390d9.netlify.app/guideDownload.html) |
-
 | 아이디 찾기 | [:link:](https://loving-wing-2390d9.netlify.app/findId.html) |
 | 아이디찾기_휴대폰번호로찾기 | [:link:](https://loving-wing-2390d9.netlify.app/findId-phone.html) |
 | 아이디찾기_이메일로찾기  | [:link:](https://loving-wing-2390d9.netlify.app/findId-email.html) |
@@ -17,7 +16,6 @@
 | 비밀번호찾기 | [:link:](https://loving-wing-2390d9.netlify.app/findPw.html) |
 | 비민번호_정보찾기x | [:link:](https://loving-wing-2390d9.netlify.app/findPwAfterNone.html) |
 | 비민번호_정보찾기O | [:link:](https://loving-wing-2390d9.netlify.app/findPwAfter.html) |
-
 | dashboard_관리자_개인정보보호관리 | [:link:](https://loving-wing-2390d9.netlify.app/privacy.html) |
 | dashboard_관리자_기타정보관리_매장정보관리 | [:link:](https://loving-wing-2390d9.netlify.app/orderinfo-store.html) |
 | dashboard_관리자_기타정보관리_비용관리 | [:link:](https://loving-wing-2390d9.netlify.app/orderinfo-cost.html) |
